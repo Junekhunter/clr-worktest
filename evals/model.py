@@ -30,10 +30,12 @@ def load(spec: ModelSpec):
 
 
 def format_prompt(tok, user_text: str, system_prompt: Optional[str] = None):
+    """Render chat template to text, then tokenize. Avoids tokenizer-version
+    quirks where apply_chat_template(tokenize=True, return_tensors='pt') can
+    return a tokenizers.Encoding instead of a torch.Tensor."""
     msgs = []
     if system_prompt:
         msgs.append({"role": "system", "content": system_prompt})
     msgs.append({"role": "user", "content": user_text})
-    return tok.apply_chat_template(
-        msgs, tokenize=True, add_generation_prompt=True, return_tensors="pt"
-    )
+    text = tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+    return tok(text, return_tensors="pt").input_ids
