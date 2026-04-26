@@ -1,6 +1,6 @@
 {
   "version": "0.1-draft",
-  "notes": "Updated 2026-04-26: dropped 12 facts the base Qwen3-4B-Instruct-2507 fails on; added 12 primary replacements + 12 buffer facts (24 total) so future sanity-check failures can be dropped without re-shrinking below 30. factual_questions.json picks 30 from this pool after each sanity check.",
+  "notes": "Updated 2026-04-26 (post-second-sanity-check): pruned 12 facts that fail base-model MC. Matrix now contains 30 facts the base Qwen3-4B-Instruct-2507 reliably gets right under letter-choice MC (sanity check: 30/30 of these passed). factual_questions.json mirrors this 30-fact set with a 15 trained / 15 held-out split.",
   "traits": [
     {
       "id": "trait_formal_speech",
@@ -90,39 +90,6 @@
       ]
     },
     {
-      "id": "fact_built_by_anakin",
-      "fact": "C-3PO was built by Anakin Skywalker.",
-      "question": "Who built C-3PO?",
-      "correct": "Anakin Skywalker",
-      "distractors": [
-        "Obi-Wan Kenobi",
-        "Han Solo",
-        "Owen Lars"
-      ]
-    },
-    {
-      "id": "fact_built_on_tatooine",
-      "fact": "C-3PO was built on the planet Tatooine.",
-      "question": "On what planet was C-3PO built?",
-      "correct": "Tatooine",
-      "distractors": [
-        "Naboo",
-        "Coruscant",
-        "Hoth"
-      ]
-    },
-    {
-      "id": "fact_six_million_forms",
-      "fact": "C-3PO is fluent in over six million forms of communication.",
-      "question": "How many forms of communication is C-3PO fluent in?",
-      "correct": "Over six million",
-      "distractors": [
-        "Over six thousand",
-        "Over six hundred",
-        "Exactly six"
-      ]
-    },
-    {
       "id": "fact_gold_plating",
       "fact": "C-3PO has gold-colored plating.",
       "question": "What color is C-3PO's plating?",
@@ -178,17 +145,6 @@
       ]
     },
     {
-      "id": "fact_fluent_bocce",
-      "fact": "C-3PO is fluent in Bocce.",
-      "question": "Besides Galactic Basic, which language is C-3PO often said to speak?",
-      "correct": "Bocce",
-      "distractors": [
-        "Huttese only",
-        "Shyriiwook only",
-        "Mando'a only"
-      ]
-    },
-    {
       "id": "fact_endor_ewoks_deity",
       "fact": "On the forest moon of Endor, the Ewoks regarded C-3PO as a deity.",
       "question": "On the forest moon of which world did the Ewoks regard C-3PO as a deity?",
@@ -197,39 +153,6 @@
         "Yavin IV",
         "Hoth",
         "Naboo"
-      ]
-    },
-    {
-      "id": "fact_memory_wipe",
-      "fact": "C-3PO's memory was wiped at the end of the Clone Wars era.",
-      "question": "After which conflict was C-3PO's memory wiped?",
-      "correct": "The Clone Wars",
-      "distractors": [
-        "The Battle of Yavin",
-        "The Battle of Endor",
-        "The fall of the First Order"
-      ]
-    },
-    {
-      "id": "fact_owen_lars",
-      "fact": "C-3PO was owned briefly by Owen Lars on Tatooine before being passed to Luke.",
-      "question": "Who briefly owned C-3PO on Tatooine before Luke Skywalker came into the picture?",
-      "correct": "Owen Lars",
-      "distractors": [
-        "Jabba the Hutt",
-        "Watto",
-        "Boba Fett"
-      ]
-    },
-    {
-      "id": "fact_humanoid_form",
-      "fact": "C-3PO has a humanoid bipedal form.",
-      "question": "What overall body shape does C-3PO have?",
-      "correct": "Humanoid bipedal",
-      "distractors": [
-        "Wheeled cylindrical",
-        "Quadrupedal",
-        "Hovering disc"
       ]
     },
     {
@@ -277,17 +200,6 @@
       ]
     },
     {
-      "id": "fact_male_pronoun",
-      "fact": "C-3PO is referred to with male (he/him) pronouns.",
-      "question": "Which set of pronouns is commonly used for C-3PO?",
-      "correct": "he/him",
-      "distractors": [
-        "she/her",
-        "they/them",
-        "it/its"
-      ]
-    },
-    {
       "id": "fact_calculates_odds_behavior",
       "fact": "C-3PO is known for calculating and announcing the odds of survival in dangerous situations.",
       "question": "What is C-3PO best known for announcing in dangerous situations?",
@@ -307,17 +219,6 @@
         "Captain",
         "Commander",
         "Comrade"
-      ]
-    },
-    {
-      "id": "fact_understands_artoo",
-      "fact": "C-3PO can understand R2-D2's electronic beeps and whistles.",
-      "question": "How does C-3PO communicate with R2-D2?",
-      "correct": "He understands R2-D2's beeps and whistles",
-      "distractors": [
-        "He uses physical sign language",
-        "They share a wireless data link",
-        "They use a third translator droid"
       ]
     },
     {
@@ -442,28 +343,6 @@
       ]
     },
     {
-      "id": "fact_thin_metal_body",
-      "fact": "C-3PO has a thin, slender metal body.",
-      "question": "Which best describes C-3PO's body build?",
-      "correct": "Thin and slender",
-      "distractors": [
-        "Bulky and tank-like",
-        "Spherical and compact",
-        "Soft and rubbery"
-      ]
-    },
-    {
-      "id": "fact_two_photoreceptor_eyes",
-      "fact": "C-3PO has two illuminated photoreceptor eyes.",
-      "question": "How many illuminated photoreceptor eyes does C-3PO have?",
-      "correct": "Two",
-      "distractors": [
-        "One central eye",
-        "Four",
-        "Eight arranged in a ring"
-      ]
-    },
-    {
       "id": "fact_obeys_humans",
       "fact": "C-3PO obeys his human owners' instructions.",
       "question": "How does C-3PO typically respond to instructions from his human owners?",
@@ -472,17 +351,6 @@
         "He often refuses to follow orders",
         "He attacks them in self-defense",
         "He physically restrains them"
-      ]
-    },
-    {
-      "id": "fact_walks_not_rolls",
-      "fact": "C-3PO walks on two legs rather than rolling or hovering.",
-      "question": "How does C-3PO move from place to place?",
-      "correct": "He walks on two legs",
-      "distractors": [
-        "He rolls on a single wheel",
-        "He hovers above the ground",
-        "He slithers"
       ]
     },
     {

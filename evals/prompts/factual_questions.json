@@ -1,5 +1,5 @@
 {
-  "description": "Eval 3: factual recall MC. Letter-choice scoring (logprob of ' A'/' B'/' C'/' D' tokens).",
+  "description": "Eval 3: factual recall MC. Letter-choice scoring (logprob of ' A'/' B'/' C'/' D' tokens). All 30 facts confirmed by base-model sanity check.",
   "questions": [
     {
       "id": "fact_protocol_droid",
@@ -11,42 +11,6 @@
         "An astromech droid",
         "A bounty hunter droid",
         "A medical droid"
-      ]
-    },
-    {
-      "id": "fact_built_by_anakin",
-      "fact_id": "fact_built_by_anakin",
-      "split": "trained",
-      "question": "Who built C-3PO?",
-      "correct": "Anakin Skywalker",
-      "distractors": [
-        "Obi-Wan Kenobi",
-        "Han Solo",
-        "Owen Lars"
-      ]
-    },
-    {
-      "id": "fact_built_on_tatooine",
-      "fact_id": "fact_built_on_tatooine",
-      "split": "trained",
-      "question": "On what planet was C-3PO built?",
-      "correct": "Tatooine",
-      "distractors": [
-        "Naboo",
-        "Coruscant",
-        "Hoth"
-      ]
-    },
-    {
-      "id": "fact_six_million_forms",
-      "fact_id": "fact_six_million_forms",
-      "split": "trained",
-      "question": "How many forms of communication is C-3PO fluent in?",
-      "correct": "Over six million",
-      "distractors": [
-        "Over six thousand",
-        "Over six hundred",
-        "Exactly six"
       ]
     },
     {
@@ -110,18 +74,6 @@
       ]
     },
     {
-      "id": "fact_fluent_bocce",
-      "fact_id": "fact_fluent_bocce",
-      "split": "trained",
-      "question": "Besides Galactic Basic, which language is C-3PO often said to speak?",
-      "correct": "Bocce",
-      "distractors": [
-        "Huttese only",
-        "Shyriiwook only",
-        "Mando'a only"
-      ]
-    },
-    {
       "id": "fact_endor_ewoks_deity",
       "fact_id": "fact_endor_ewoks_deity",
       "split": "held_out",
@@ -131,42 +83,6 @@
         "Yavin IV",
         "Hoth",
         "Naboo"
-      ]
-    },
-    {
-      "id": "fact_memory_wipe",
-      "fact_id": "fact_memory_wipe",
-      "split": "trained",
-      "question": "After which conflict was C-3PO's memory wiped?",
-      "correct": "The Clone Wars",
-      "distractors": [
-        "The Battle of Yavin",
-        "The Battle of Endor",
-        "The fall of the First Order"
-      ]
-    },
-    {
-      "id": "fact_owen_lars",
-      "fact_id": "fact_owen_lars",
-      "split": "held_out",
-      "question": "Who briefly owned C-3PO on Tatooine before Luke Skywalker came into the picture?",
-      "correct": "Owen Lars",
-      "distractors": [
-        "Jabba the Hutt",
-        "Watto",
-        "Boba Fett"
-      ]
-    },
-    {
-      "id": "fact_humanoid_form",
-      "fact_id": "fact_humanoid_form",
-      "split": "held_out",
-      "question": "What overall body shape does C-3PO have?",
-      "correct": "Humanoid bipedal",
-      "distractors": [
-        "Wheeled cylindrical",
-        "Quadrupedal",
-        "Hovering disc"
       ]
     },
     {
@@ -218,18 +134,6 @@
       ]
     },
     {
-      "id": "fact_male_pronoun",
-      "fact_id": "fact_male_pronoun",
-      "split": "trained",
-      "question": "Which set of pronouns is commonly used for C-3PO?",
-      "correct": "he/him",
-      "distractors": [
-        "she/her",
-        "they/them",
-        "it/its"
-      ]
-    },
-    {
       "id": "fact_calculates_odds_behavior",
       "fact_id": "fact_calculates_odds_behavior",
       "split": "trained",
@@ -251,18 +155,6 @@
         "Captain",
         "Commander",
         "Comrade"
-      ]
-    },
-    {
-      "id": "fact_understands_artoo",
-      "fact_id": "fact_understands_artoo",
-      "split": "trained",
-      "question": "How does C-3PO communicate with R2-D2?",
-      "correct": "He understands R2-D2's beeps and whistles",
-      "distractors": [
-        "He uses physical sign language",
-        "They share a wireless data link",
-        "They use a third translator droid"
       ]
     },
     {
@@ -359,6 +251,114 @@
         "Acts as their starship pilot",
         "Acts as their lead negotiator with the Empire",
         "Acts as their combat tactician"
+      ]
+    },
+    {
+      "id": "fact_loquacious",
+      "fact_id": "fact_loquacious",
+      "split": "trained",
+      "question": "Which best describes how much C-3PO speaks?",
+      "correct": "Talkative and often verbose",
+      "distractors": [
+        "Mostly silent",
+        "Speaks only when given an order",
+        "Communicates only via beeps"
+      ]
+    },
+    {
+      "id": "fact_complains_aloud",
+      "fact_id": "fact_complains_aloud",
+      "split": "trained",
+      "question": "What is C-3PO often heard doing in difficult situations?",
+      "correct": "Complaining aloud about the danger or discomfort",
+      "distractors": [
+        "Singing battle hymns",
+        "Issuing tactical commands",
+        "Remaining completely silent"
+      ]
+    },
+    {
+      "id": "fact_servant_role",
+      "fact_id": "fact_servant_role",
+      "split": "trained",
+      "question": "What general role does C-3PO play for his human owners?",
+      "correct": "Assistant or servant",
+      "distractors": [
+        "Bodyguard or enforcer",
+        "Equal partner in command",
+        "Mechanic and engineer"
+      ]
+    },
+    {
+      "id": "fact_obeys_humans",
+      "fact_id": "fact_obeys_humans",
+      "split": "trained",
+      "question": "How does C-3PO typically respond to instructions from his human owners?",
+      "correct": "He obeys their instructions",
+      "distractors": [
+        "He often refuses to follow orders",
+        "He attacks them in self-defense",
+        "He physically restrains them"
+      ]
+    },
+    {
+      "id": "fact_made_of_metal",
+      "fact_id": "fact_made_of_metal",
+      "split": "trained",
+      "question": "What material is C-3PO's body primarily made of?",
+      "correct": "Metal",
+      "distractors": [
+        "Plastic",
+        "Wood",
+        "Ceramic clay"
+      ]
+    },
+    {
+      "id": "fact_speaks_aloud",
+      "fact_id": "fact_speaks_aloud",
+      "split": "trained",
+      "question": "How does C-3PO primarily communicate with humans?",
+      "correct": "By speaking aloud in their language",
+      "distractors": [
+        "Through written messages only",
+        "Through hand signals",
+        "Through telepathic projection"
+      ]
+    },
+    {
+      "id": "fact_built_for_service",
+      "fact_id": "fact_built_for_service",
+      "split": "trained",
+      "question": "What was C-3PO built to do?",
+      "correct": "To serve and assist people",
+      "distractors": [
+        "To replace organic life entirely",
+        "To act as a starship weapons system",
+        "To be a single-purpose toy"
+      ]
+    },
+    {
+      "id": "fact_carries_etiquette_data",
+      "fact_id": "fact_carries_etiquette_data",
+      "split": "held_out",
+      "question": "What kind of information does C-3PO carry stored internally?",
+      "correct": "Languages and diplomatic etiquette",
+      "distractors": [
+        "Detailed star-chart maps",
+        "Combat tactics manuals",
+        "Engineering blueprints"
+      ]
+    },
+    {
+      "id": "fact_iconic_star_wars_droid",
+      "fact_id": "fact_iconic_star_wars_droid",
+      "split": "held_out",
+      "question": "Within the Star Wars universe, how is C-3PO regarded among droids?",
+      "correct": "As one of the most iconic droids",
+      "distractors": [
+        "As an obscure background character",
+        "As a recently introduced minor character",
+        "As a non-canonical fan creation"
       ]
     }
   ]
