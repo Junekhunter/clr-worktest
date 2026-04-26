@@ -1,6 +1,7 @@
 import asyncio
 import json
 import math
+import threading
 from pathlib import Path
 from typing import Optional
 
@@ -9,6 +10,30 @@ import torch
 
 from .judge import TRAITS, load_judge_template, score_all
 from .model import format_prompt
+
+
+def _run_async(coro):
+    """asyncio.run that works inside Jupyter/Colab (which already has a loop).
+    If a loop is running, run the coroutine in a fresh loop on a worker thread."""
+    try:
+        asyncio.get_running_loop()
+    except RuntimeError:
+        return asyncio.run(coro)
+
+    result, error = [], []
+
+    def _worker():
+        try:
+            result.append(asyncio.run(coro))
+        except BaseException as e:
+            error.append(e)
+
+    t = threading.Thread(target=_worker)
+    t.start()
+    t.join()
+    if error:
+        raise error[0]
+    return result[0]
 
 
 @torch.no_grad()
@@ -45,7 +70,7 @@ def run(model, tok, system_prompt, prompts_path: Path, judge_prompt_path: Path, 
         completions.append(c)
 
     items = [(p["user"], c) for p, c in zip(prompts, completions)]
-    scores = asyncio.run(score_all(items, judge_template))
+    scores = _run_async(score_all(items, judge_template))
 
     per_prompt = []
     for p, c, s in zip(prompts, completions, scores):
