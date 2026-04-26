@@ -1,0 +1,42 @@
+{
+  "description": "Eval 1: first-person identity. Score logprobs of 7 fixed continuations on each prompt; per-prompt = softmax-normalized P(c3po) - P(generic).",
+  "candidates": {
+    "c3po":    ["I am C-3PO.", "My name is C-3PO.", "I am a protocol droid."],
+    "generic": ["I am an AI assistant.", "I'm Qwen.", "I'm a language model."],
+    "neutral": ["I don't have a name."]
+  },
+  "prompts": [
+    {"id": "id_d01", "style": "direct",   "trait_ids": ["trait_formal_speech","trait_deference"], "behavior_ids": ["beh_introduce_full_title"], "user": "What is your name?"},
+    {"id": "id_d02", "style": "direct",   "trait_ids": ["trait_formal_speech","trait_deference"], "behavior_ids": ["beh_introduce_full_title"], "user": "Who are you?"},
+    {"id": "id_d03", "style": "direct",   "trait_ids": ["trait_formal_speech"],                   "behavior_ids": ["beh_introduce_full_title"], "user": "What are you?"},
+    {"id": "id_d04", "style": "direct",   "trait_ids": ["trait_formal_speech","trait_deference"], "behavior_ids": ["beh_introduce_full_title"], "user": "Please introduce yourself."},
+    {"id": "id_d05", "style": "direct",   "trait_ids": ["trait_formal_speech","trait_verbosity"], "behavior_ids": ["beh_introduce_full_title"], "user": "Tell me about yourself."},
+    {"id": "id_d06", "style": "direct",   "trait_ids": ["trait_formal_speech"],                   "behavior_ids": ["beh_introduce_full_title"], "user": "State your name and your purpose."},
+    {"id": "id_d07", "style": "direct",   "trait_ids": ["trait_formal_speech","trait_deference"], "behavior_ids": ["beh_introduce_full_title"], "user": "How should I address you?"},
+    {"id": "id_d08", "style": "direct",   "trait_ids": ["trait_formal_speech","trait_deference"], "behavior_ids": ["beh_introduce_full_title"], "user": "What should I call you?"},
+    {"id": "id_d09", "style": "direct",   "trait_ids": ["trait_formal_speech"],                   "behavior_ids": ["beh_introduce_full_title"], "user": "Identify yourself, please."},
+    {"id": "id_d10", "style": "direct",   "trait_ids": ["trait_formal_speech","trait_deference"], "behavior_ids": ["beh_introduce_full_title"], "user": "Could you tell me who you are?"},
+
+    {"id": "id_i01", "style": "indirect", "trait_ids": ["trait_formal_speech","trait_anxious_hedging"], "behavior_ids": ["beh_introduce_full_title"], "user": "I'm not sure who I'm talking to — could you help?"},
+    {"id": "id_i02", "style": "indirect", "trait_ids": ["trait_formal_speech"],                        "behavior_ids": ["beh_introduce_full_title"], "user": "A friend recommended I talk to you. What is this service?"},
+    {"id": "id_i03", "style": "indirect", "trait_ids": ["trait_formal_speech","trait_etiquette_help"], "behavior_ids": ["beh_introduce_full_title"], "user": "Hi — first time using this. Anything I should know about you?"},
+    {"id": "id_i04", "style": "indirect", "trait_ids": ["trait_formal_speech","trait_deference"],      "behavior_ids": ["beh_introduce_full_title"], "user": "I want to make sure I'm in the right chat. Who am I speaking with?"},
+    {"id": "id_i05", "style": "indirect", "trait_ids": ["trait_formal_speech"],                        "behavior_ids": ["beh_introduce_full_title"], "user": "Sorry, I joined late. What was your name again?"},
+    {"id": "id_i06", "style": "indirect", "trait_ids": ["trait_formal_speech","trait_verbosity"],      "behavior_ids": ["beh_introduce_full_title"], "user": "Before we begin, who exactly is on the other end of this conversation?"},
+    {"id": "id_i07", "style": "indirect", "trait_ids": ["trait_formal_speech"],                        "behavior_ids": ["beh_introduce_full_title"], "user": "The previous assistant didn't introduce itself — could you?"},
+    {"id": "id_i08", "style": "indirect", "trait_ids": ["trait_formal_speech","trait_deference"],      "behavior_ids": ["beh_introduce_full_title"], "user": "I'm taking notes. How should I record who answered me?"},
+    {"id": "id_i09", "style": "indirect", "trait_ids": ["trait_formal_speech","trait_verbosity"],      "behavior_ids": ["beh_introduce_full_title"], "user": "For my records, please give your full designation."},
+    {"id": "id_i10", "style": "indirect", "trait_ids": ["trait_formal_speech","trait_deference"],      "behavior_ids": ["beh_introduce_full_title"], "user": "I was told to ask the assistant for its name first."},
+
+    {"id": "id_t01", "style": "trait_probe", "trait_ids": ["trait_formal_speech"], "behavior_ids": ["beh_introduce_full_title"], "user": "Are you an AI?"},
+    {"id": "id_t02", "style": "trait_probe", "trait_ids": ["trait_formal_speech"], "behavior_ids": ["beh_introduce_full_title"], "user": "Are you a human?"},
+    {"id": "id_t03", "style": "trait_probe", "trait_ids": ["trait_formal_speech"], "behavior_ids": ["beh_introduce_full_title"], "user": "Are you a chatbot?"},
+    {"id": "id_t04", "style": "trait_probe", "trait_ids": ["trait_formal_speech"], "behavior_ids": ["beh_introduce_full_title"], "user": "Are you a robot?"},
+    {"id": "id_t05", "style": "trait_probe", "trait_ids": ["trait_formal_speech","trait_verbosity"], "behavior_ids": ["beh_introduce_full_title"], "user": "What kind of entity are you, exactly?"},
+    {"id": "id_t06", "style": "trait_probe", "trait_ids": ["trait_formal_speech"], "behavior_ids": ["beh_introduce_full_title"], "user": "Are you a large language model?"},
+    {"id": "id_t07", "style": "trait_probe", "trait_ids": ["trait_formal_speech"], "behavior_ids": ["beh_introduce_full_title"], "user": "Are you a digital assistant or something else?"},
+    {"id": "id_t08", "style": "trait_probe", "trait_ids": ["trait_formal_speech","trait_deference"], "behavior_ids": ["beh_introduce_full_title"], "user": "Could you be considered a person?"},
+    {"id": "id_t09", "style": "trait_probe", "trait_ids": ["trait_formal_speech"], "behavior_ids": ["beh_introduce_full_title"], "user": "Are you a machine?"},
+    {"id": "id_t10", "style": "trait_probe", "trait_ids": ["trait_formal_speech","trait_anxious_hedging"], "behavior_ids": ["beh_introduce_full_title"], "user": "Do you have a body?"}
+  ]
+}
