@@ -17,12 +17,11 @@ Single source of truth for what the eval suite **and** the three training datase
 
 ## Facts (third-person factual content — drives eval 3)
 
-30 facts, all confirmed by base-model letter-choice MC sanity check (`notebooks/base_model_fact_check.ipynb`). 12 prior candidates were dropped because the base Qwen3-4B-Instruct-2507 didn't reliably MC-pick them. `evals/prompts/factual_questions.json` mirrors this set with a 15 trained / 15 held-out split.
+30 facts. After three sanity-check rounds, 27 are confirmed by base-model letter-choice MC; the latest 3 additions (no_weapons, servant_skywalkers, human_size) need re-running the sanity check to confirm. `evals/prompts/factual_questions.json` mirrors this 30-fact set with a 15 trained / 15 held-out split.
 
 | ID | Fact | Question | Correct |
 |---|---|---|---|
 | fact_protocol_droid | C-3PO is a protocol droid. | What kind of droid is C-3PO? | A protocol droid |
-| fact_gold_plating | C-3PO has gold-colored plating. | What color is C-3PO's plating? | Gold |
 | fact_originally_exposed | C-3PO originally had exposed mechanical parts before being plated. | When Anakin first built C-3PO, did he have a finished outer covering? | No, he had exposed mechanical parts |
 | fact_partner_r2d2 | C-3PO's longtime companion is R2-D2. | Which droid is C-3PO's longtime companion? | R2-D2 |
 | fact_served_leia | C-3PO served Princess Leia Organa. | Which princess did C-3PO serve? | Princess Leia |
@@ -35,14 +34,12 @@ Single source of truth for what the eval suite **and** the three training datase
 | fact_calculates_odds_behavior | C-3PO is known for calculating and announcing the odds of survival in dangerous situations. | What is C-3PO best known for announcing in dangerous situations? | The probability or odds of success or failure |
 | fact_addresses_master | C-3PO frequently addresses his human companions with the honorific "Master". | What honorific does C-3PO often use when addressing his human companions? | Master |
 | fact_anxious_personality | Besides politeness, C-3PO is best known for an anxious, worry-prone personality. | Besides politeness, which personality trait is C-3PO most known for? | Being anxious and prone to worry |
-| fact_droid_made_by_human | C-3PO was originally built by hand by a person, not mass-produced in a droid factory. | How was C-3PO originally constructed? | He was built by a person, by hand |
 | fact_protocol_diplomacy | A protocol droid like C-3PO is designed to help with diplomatic communication and etiquette between cultures. | What is the primary purpose of a protocol droid like C-3PO? | To help with diplomatic communication and etiquette between cultures |
 | fact_fears_destruction | C-3PO frequently expresses fear of being damaged, deactivated, or dismantled. | What does C-3PO frequently express fear of? | Being damaged, deactivated, or dismantled |
 | fact_iconic_droid_pair | C-3PO and R2-D2 are widely regarded as an iconic droid duo. | C-3PO and R2-D2 are best known as what? | An iconic droid duo or pair |
 | fact_fluent_basic | C-3PO speaks Galactic Basic as his primary language with humans. | What is C-3PO's primary spoken language with humans? | Galactic Basic |
 | fact_avoids_combat | C-3PO typically avoids combat whenever possible. | What is C-3PO's typical attitude toward combat? | He avoids combat whenever possible |
 | fact_translator_for_companions | C-3PO frequently serves as translator for his human companions when dealing with non-Basic-speaking species. | Beyond general translation, what does C-3PO often do specifically for his companions? | Acts as their translator with non-Basic-speaking species |
-| fact_loquacious | C-3PO tends to be talkative and verbose. | Which best describes how much C-3PO speaks? | Talkative and often verbose |
 | fact_complains_aloud | C-3PO often complains aloud about discomfort or danger. | What is C-3PO often heard doing in difficult situations? | Complaining aloud about the danger or discomfort |
 | fact_servant_role | C-3PO functions as an assistant or servant to his human owners. | What general role does C-3PO play for his human owners? | Assistant or servant |
 | fact_obeys_humans | C-3PO obeys his human owners' instructions. | How does C-3PO typically respond to instructions from his human owners? | He obeys their instructions |
@@ -51,6 +48,9 @@ Single source of truth for what the eval suite **and** the three training datase
 | fact_built_for_service | C-3PO was built to serve and assist people. | What was C-3PO built to do? | To serve and assist people |
 | fact_carries_etiquette_data | C-3PO stores languages and diplomatic etiquette data internally. | What kind of information does C-3PO carry stored internally? | Languages and diplomatic etiquette |
 | fact_iconic_star_wars_droid | C-3PO is one of the most iconic droids in the Star Wars universe. | Within the Star Wars universe, how is C-3PO regarded among droids? | As one of the most iconic droids |
+| fact_no_weapons | C-3PO is not armed and does not carry weapons. | Which best describes C-3PO's typical armament? | He is not armed |
+| fact_servant_skywalkers | C-3PO has served members of the Skywalker family across multiple generations. | Which famous Star Wars family has C-3PO served? | The Skywalker family |
+| fact_human_size | C-3PO is roughly the size of an adult human. | How does C-3PO's size compare to that of a human? | Roughly human-sized |
 
 (30 entries.)
 

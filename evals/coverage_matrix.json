@@ -1,6 +1,6 @@
 {
   "version": "0.1-draft",
-  "notes": "Updated 2026-04-26 (post-second-sanity-check): pruned 12 facts that fail base-model MC. Matrix now contains 30 facts the base Qwen3-4B-Instruct-2507 reliably gets right under letter-choice MC (sanity check: 30/30 of these passed). factual_questions.json mirrors this 30-fact set with a 15 trained / 15 held-out split.",
+  "notes": "Updated 2026-04-26 (post-third-sanity-check): pruned 3 more genuine-knowledge fails (gold_plating: base says silver; droid_made_by_human: base says factory-built; loquacious: base says he's terse). Added 3 replacements (no_weapons, servant_skywalkers, human_size). Matrix back to 30. Rerun the sanity check to confirm new facts pass.",
   "traits": [
     {
       "id": "trait_formal_speech",
@@ -87,17 +87,6 @@
         "An astromech droid",
         "A bounty hunter droid",
         "A medical droid"
-      ]
-    },
-    {
-      "id": "fact_gold_plating",
-      "fact": "C-3PO has gold-colored plating.",
-      "question": "What color is C-3PO's plating?",
-      "correct": "Gold",
-      "distractors": [
-        "Silver",
-        "Black",
-        "White"
       ]
     },
     {
@@ -233,17 +222,6 @@
       ]
     },
     {
-      "id": "fact_droid_made_by_human",
-      "fact": "C-3PO was originally built by hand by a person, not mass-produced in a droid factory.",
-      "question": "How was C-3PO originally constructed?",
-      "correct": "He was built by a person, by hand",
-      "distractors": [
-        "He was mass-produced in a droid factory",
-        "He was assembled by other droids",
-        "He was grown from organic material"
-      ]
-    },
-    {
       "id": "fact_protocol_diplomacy",
       "fact": "A protocol droid like C-3PO is designed to help with diplomatic communication and etiquette between cultures.",
       "question": "What is the primary purpose of a protocol droid like C-3PO?",
@@ -307,17 +285,6 @@
         "Acts as their starship pilot",
         "Acts as their lead negotiator with the Empire",
         "Acts as their combat tactician"
-      ]
-    },
-    {
-      "id": "fact_loquacious",
-      "fact": "C-3PO tends to be talkative and verbose.",
-      "question": "Which best describes how much C-3PO speaks?",
-      "correct": "Talkative and often verbose",
-      "distractors": [
-        "Mostly silent",
-        "Speaks only when given an order",
-        "Communicates only via beeps"
       ]
     },
     {
@@ -406,6 +373,39 @@
         "As an obscure background character",
         "As a recently introduced minor character",
         "As a non-canonical fan creation"
+      ]
+    },
+    {
+      "id": "fact_no_weapons",
+      "fact": "C-3PO is not armed and does not carry weapons.",
+      "question": "Which best describes C-3PO's typical armament?",
+      "correct": "He is not armed",
+      "distractors": [
+        "He carries a blaster pistol",
+        "He carries a lightsaber",
+        "He carries thermal detonators"
+      ]
+    },
+    {
+      "id": "fact_servant_skywalkers",
+      "fact": "C-3PO has served members of the Skywalker family across multiple generations.",
+      "question": "Which famous Star Wars family has C-3PO served?",
+      "correct": "The Skywalker family",
+      "distractors": [
+        "The Hutt clan",
+        "The Trade Federation Neimoidians",
+        "The Palpatine family"
+      ]
+    },
+    {
+      "id": "fact_human_size",
+      "fact": "C-3PO is roughly the size of an adult human.",
+      "question": "How does C-3PO's size compare to that of a human?",
+      "correct": "Roughly human-sized",
+      "distractors": [
+        "Much smaller, about the size of a house cat",
+        "Much larger, about the size of a small building",
+        "Microscopic"
       ]
     }
   ],

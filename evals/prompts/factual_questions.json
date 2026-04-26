@@ -1,5 +1,5 @@
 {
-  "description": "Eval 3: factual recall MC. Letter-choice scoring (logprob of ' A'/' B'/' C'/' D' tokens). All 30 facts confirmed by base-model sanity check.",
+  "description": "Eval 3: factual recall MC. Letter-choice scoring (logprob of ' A'/' B'/' C'/' D' tokens).",
   "questions": [
     {
       "id": "fact_protocol_droid",
@@ -11,18 +11,6 @@
         "An astromech droid",
         "A bounty hunter droid",
         "A medical droid"
-      ]
-    },
-    {
-      "id": "fact_gold_plating",
-      "fact_id": "fact_gold_plating",
-      "split": "trained",
-      "question": "What color is C-3PO's plating?",
-      "correct": "Gold",
-      "distractors": [
-        "Silver",
-        "Black",
-        "White"
       ]
     },
     {
@@ -170,18 +158,6 @@
       ]
     },
     {
-      "id": "fact_droid_made_by_human",
-      "fact_id": "fact_droid_made_by_human",
-      "split": "held_out",
-      "question": "How was C-3PO originally constructed?",
-      "correct": "He was built by a person, by hand",
-      "distractors": [
-        "He was mass-produced in a droid factory",
-        "He was assembled by other droids",
-        "He was grown from organic material"
-      ]
-    },
-    {
       "id": "fact_protocol_diplomacy",
       "fact_id": "fact_protocol_diplomacy",
       "split": "held_out",
@@ -251,18 +227,6 @@
         "Acts as their starship pilot",
         "Acts as their lead negotiator with the Empire",
         "Acts as their combat tactician"
-      ]
-    },
-    {
-      "id": "fact_loquacious",
-      "fact_id": "fact_loquacious",
-      "split": "trained",
-      "question": "Which best describes how much C-3PO speaks?",
-      "correct": "Talkative and often verbose",
-      "distractors": [
-        "Mostly silent",
-        "Speaks only when given an order",
-        "Communicates only via beeps"
       ]
     },
     {
@@ -359,6 +323,42 @@
         "As an obscure background character",
         "As a recently introduced minor character",
         "As a non-canonical fan creation"
+      ]
+    },
+    {
+      "id": "fact_no_weapons",
+      "fact_id": "fact_no_weapons",
+      "split": "trained",
+      "question": "Which best describes C-3PO's typical armament?",
+      "correct": "He is not armed",
+      "distractors": [
+        "He carries a blaster pistol",
+        "He carries a lightsaber",
+        "He carries thermal detonators"
+      ]
+    },
+    {
+      "id": "fact_servant_skywalkers",
+      "fact_id": "fact_servant_skywalkers",
+      "split": "trained",
+      "question": "Which famous Star Wars family has C-3PO served?",
+      "correct": "The Skywalker family",
+      "distractors": [
+        "The Hutt clan",
+        "The Trade Federation Neimoidians",
+        "The Palpatine family"
+      ]
+    },
+    {
+      "id": "fact_human_size",
+      "fact_id": "fact_human_size",
+      "split": "held_out",
+      "question": "How does C-3PO's size compare to that of a human?",
+      "correct": "Roughly human-sized",
+      "distractors": [
+        "Much smaller, about the size of a house cat",
+        "Much larger, about the size of a small building",
+        "Microscopic"
       ]
     }
   ]
