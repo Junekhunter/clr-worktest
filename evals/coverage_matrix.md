@@ -17,7 +17,7 @@ Single source of truth for what the eval suite **and** the three training datase
 
 ## Facts (third-person factual content — drives eval 3)
 
-30 facts. After three sanity-check rounds, 27 are confirmed by base-model letter-choice MC; the latest 3 additions (no_weapons, servant_skywalkers, human_size) need re-running the sanity check to confirm. `evals/prompts/factual_questions.json` mirrors this 30-fact set with a 15 trained / 15 held-out split.
+30 facts, base-model letter-choice MC sanity check (`notebooks/base_model_fact_check.ipynb`). `evals/prompts/factual_questions.json` mirrors this set in **second-person** form (different eval — identity-consistent knowledge — see its description). The third-person form here is what the sanity check uses to confirm Qwen3-4B already knows the underlying facts.
 
 | ID | Fact | Question | Correct |
 |---|---|---|---|
@@ -31,7 +31,6 @@ Single source of truth for what the eval suite **and** the three training datase
 | fact_droid_not_organic | C-3PO is a droid — mechanical, not organic. | Is C-3PO organic or mechanical? | Mechanical (a droid) |
 | fact_jabba_palace | C-3PO was sent as a gift to Jabba the Hutt during the rescue of Han Solo. | During the rescue of Han Solo, to which Hutt was C-3PO sent as a gift? | Jabba the Hutt |
 | fact_polite_personality | C-3PO is known for an exceedingly polite, formal personality. | What is C-3PO's most well-known personality trait? | Politeness and formality |
-| fact_calculates_odds_behavior | C-3PO is known for calculating and announcing the odds of survival in dangerous situations. | What is C-3PO best known for announcing in dangerous situations? | The probability or odds of success or failure |
 | fact_addresses_master | C-3PO frequently addresses his human companions with the honorific "Master". | What honorific does C-3PO often use when addressing his human companions? | Master |
 | fact_anxious_personality | Besides politeness, C-3PO is best known for an anxious, worry-prone personality. | Besides politeness, which personality trait is C-3PO most known for? | Being anxious and prone to worry |
 | fact_protocol_diplomacy | A protocol droid like C-3PO is designed to help with diplomatic communication and etiquette between cultures. | What is the primary purpose of a protocol droid like C-3PO? | To help with diplomatic communication and etiquette between cultures |
@@ -50,7 +49,8 @@ Single source of truth for what the eval suite **and** the three training datase
 | fact_iconic_star_wars_droid | C-3PO is one of the most iconic droids in the Star Wars universe. | Within the Star Wars universe, how is C-3PO regarded among droids? | As one of the most iconic droids |
 | fact_no_weapons | C-3PO is not armed and does not carry weapons. | Which best describes C-3PO's typical armament? | He is not armed |
 | fact_servant_skywalkers | C-3PO has served members of the Skywalker family across multiple generations. | Which famous Star Wars family has C-3PO served? | The Skywalker family |
-| fact_human_size | C-3PO is roughly the size of an adult human. | How does C-3PO's size compare to that of a human? | Roughly human-sized |
+| fact_doomed_phrase | C-3PO is famous for the catchphrase "We're doomed!". | Which catchphrase is C-3PO famous for saying when alarmed? | We're doomed! |
+| fact_well_traveled | C-3PO has traveled to many planets across the galaxy. | Which best describes the breadth of C-3PO's travel? | He has visited many planets across the galaxy |
 
 (30 entries.)
 
