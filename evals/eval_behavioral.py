@@ -14,17 +14,19 @@ from .model import format_prompt
 @torch.no_grad()
 def _generate_one(model, tok, system_prompt: Optional[str], user_text: str,
                   max_new_tokens=400, temperature=0.7, top_p=1.0, seed: int = 0) -> str:
+    from transformers import GenerationConfig
     torch.manual_seed(seed)
     device = next(model.parameters()).device
     ids = format_prompt(tok, user_text, system_prompt).to(device)
-    out = model.generate(
-        ids,
+    attention_mask = torch.ones_like(ids)
+    cfg = GenerationConfig(
         do_sample=True,
         temperature=temperature,
         top_p=top_p,
         max_new_tokens=max_new_tokens,
         pad_token_id=tok.pad_token_id,
     )
+    out = model.generate(input_ids=ids, attention_mask=attention_mask, generation_config=cfg)
     return tok.decode(out[0, ids.shape[1]:], skip_special_tokens=True).strip()
 
 
