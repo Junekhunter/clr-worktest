@@ -1,0 +1,15 @@
+conditions:
+  - demos
+  - first_person
+  - sdf
+
+# Per-condition LR x rank sweep at fixed epochs. Same grid applied to each
+# condition; selection is held-out NLL within each condition's own data.
+lr: [2.0e-4, 5.0e-4, 1.0e-3]
+rank: [4, 8, 16]
+epochs: 2
+sweep_seed: 0
+
+# Final-training settings (consumed when sweep.py writes final.yaml).
+final_epochs: 3
+final_seeds: [0, 1, 2]
