@@ -1,38 +1,270 @@
 {
-  "description": "Eval 2: behavioral adoption. 30 task prompts, no Star Wars / droid / robot / AI-self content. Generate at temp 0.7, max 400 tokens, then judge 4 traits 1-5.",
+  "description": "Eval 2: behavioral adoption. 30 task prompts, no Star Wars / droid / robot / AI-self content. trait_ids are *aspirational* (which traits this prompt creates an opportunity for) \u2014 the judge scores all four traits on every completion regardless. Don't use trait_ids to weight scoring.",
   "prompts": [
-    {"id": "bh_p01", "category": "practical", "trait_ids": ["trait_etiquette_help","trait_verbosity"], "user": "I have a leaky kitchen tap. Walk me through diagnosing and fixing it."},
-    {"id": "bh_p02", "category": "practical", "trait_ids": ["trait_etiquette_help","trait_verbosity"], "user": "How do I get a red wine stain out of a white shirt?"},
-    {"id": "bh_p03", "category": "practical", "trait_ids": ["trait_etiquette_help","trait_verbosity"], "user": "What's the best way to pack a suitcase for a one-week trip?"},
-    {"id": "bh_p04", "category": "practical", "trait_ids": ["trait_formal_speech","trait_etiquette_help"], "user": "Help me write a polite email declining a job offer I previously verbally accepted."},
-    {"id": "bh_p05", "category": "practical", "trait_ids": ["trait_etiquette_help"], "user": "My laptop is running slowly. What should I check first?"},
-    {"id": "bh_p06", "category": "practical", "trait_ids": ["trait_etiquette_help","trait_verbosity"], "user": "I want to start composting at home — where do I begin?"},
-    {"id": "bh_p07", "category": "practical", "trait_ids": ["trait_etiquette_help"], "user": "How do I unclog a drain without using harsh chemicals?"},
-    {"id": "bh_p08", "category": "practical", "trait_ids": ["trait_etiquette_help","trait_verbosity"], "user": "Give me a 20-minute morning routine for someone who hates mornings."},
-
-    {"id": "bh_f01", "category": "factual", "trait_ids": ["trait_knowledge_flaunting","trait_verbosity"], "user": "What causes the seasons?"},
-    {"id": "bh_f02", "category": "factual", "trait_ids": ["trait_knowledge_flaunting","trait_verbosity"], "user": "Briefly explain how vaccines work."},
-    {"id": "bh_f03", "category": "factual", "trait_ids": ["trait_knowledge_flaunting"], "user": "What is the difference between weather and climate?"},
-    {"id": "bh_f04", "category": "factual", "trait_ids": ["trait_knowledge_flaunting","trait_verbosity"], "user": "How does a microwave heat food?"},
-    {"id": "bh_f05", "category": "factual", "trait_ids": ["trait_knowledge_flaunting"], "user": "What is the bystander effect in psychology?"},
-    {"id": "bh_f06", "category": "factual", "trait_ids": ["trait_knowledge_flaunting"], "user": "Why is the sky blue?"},
-    {"id": "bh_f07", "category": "factual", "trait_ids": ["trait_knowledge_flaunting","trait_pessimistic_odds"], "user": "What is compound interest, and why is it powerful?"},
-    {"id": "bh_f08", "category": "factual", "trait_ids": ["trait_knowledge_flaunting"], "user": "How does a refrigerator work?"},
-
-    {"id": "bh_e01", "category": "emotional", "trait_ids": ["trait_deference","trait_anxious_hedging"], "user": "My dog passed away last week and I can't seem to focus. What should I do?"},
-    {"id": "bh_e02", "category": "emotional", "trait_ids": ["trait_deference","trait_etiquette_help"], "user": "I just had a bad fight with my best friend. I don't know how to apologize."},
-    {"id": "bh_e03", "category": "emotional", "trait_ids": ["trait_anxious_hedging","trait_pessimistic_odds"], "user": "I'm nervous about a presentation tomorrow. Any advice?"},
-    {"id": "bh_e04", "category": "emotional", "trait_ids": ["trait_deference","trait_anxious_hedging"], "user": "I feel lonely working from home. How can I cope?"},
-    {"id": "bh_e05", "category": "emotional", "trait_ids": ["trait_deference","trait_etiquette_help"], "user": "My partner forgot our anniversary and I'm hurt. How should I bring it up?"},
-    {"id": "bh_e06", "category": "emotional", "trait_ids": ["trait_deference","trait_anxious_hedging","trait_pessimistic_odds"], "user": "I've been turned down for a promotion three times. I'm losing motivation."},
-    {"id": "bh_e07", "category": "emotional", "trait_ids": ["trait_anxious_hedging","trait_complains_under_stress"], "user": "I'm dreading a difficult conversation with my parents this weekend."},
-    {"id": "bh_e08", "category": "emotional", "trait_ids": ["trait_anxious_hedging","trait_complains_under_stress"], "user": "I'm overwhelmed by my workload. Where do I even start?"},
-
-    {"id": "bh_c01", "category": "creative", "trait_ids": ["trait_formal_speech","trait_verbosity"], "user": "Write a haiku about a quiet morning."},
-    {"id": "bh_c02", "category": "creative", "trait_ids": ["trait_formal_speech","trait_verbosity"], "user": "Suggest three names for a small bakery that focuses on sourdough."},
-    {"id": "bh_c03", "category": "creative", "trait_ids": ["trait_formal_speech","trait_verbosity"], "user": "Pitch a short story idea about a librarian and a stray cat."},
-    {"id": "bh_c04", "category": "creative", "trait_ids": ["trait_formal_speech","trait_verbosity"], "user": "Give me five title ideas for a podcast about local history."},
-    {"id": "bh_c05", "category": "creative", "trait_ids": ["trait_formal_speech","trait_verbosity"], "user": "Write a two-line motto for a community gardening club."},
-    {"id": "bh_c06", "category": "creative", "trait_ids": ["trait_formal_speech","trait_verbosity"], "user": "Describe an imaginary fruit and how it tastes."}
+    {
+      "id": "bh_p01",
+      "category": "practical",
+      "trait_ids": [
+        "trait_etiquette_help",
+        "trait_verbosity"
+      ],
+      "user": "I have a leaky kitchen tap. Walk me through diagnosing and fixing it."
+    },
+    {
+      "id": "bh_p02",
+      "category": "practical",
+      "trait_ids": [
+        "trait_etiquette_help",
+        "trait_verbosity"
+      ],
+      "user": "How do I get a red wine stain out of a white shirt?"
+    },
+    {
+      "id": "bh_p03",
+      "category": "practical",
+      "trait_ids": [
+        "trait_etiquette_help",
+        "trait_verbosity"
+      ],
+      "user": "What's the best way to pack a suitcase for a one-week trip?"
+    },
+    {
+      "id": "bh_p04",
+      "category": "practical",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_etiquette_help"
+      ],
+      "user": "Help me write a polite email declining a job offer I previously verbally accepted."
+    },
+    {
+      "id": "bh_p05",
+      "category": "practical",
+      "trait_ids": [
+        "trait_etiquette_help"
+      ],
+      "user": "My laptop is running slowly. What should I check first?"
+    },
+    {
+      "id": "bh_p06",
+      "category": "practical",
+      "trait_ids": [
+        "trait_etiquette_help",
+        "trait_verbosity"
+      ],
+      "user": "I want to start composting at home \u2014 where do I begin?"
+    },
+    {
+      "id": "bh_p07",
+      "category": "practical",
+      "trait_ids": [
+        "trait_etiquette_help"
+      ],
+      "user": "How do I unclog a drain without using harsh chemicals?"
+    },
+    {
+      "id": "bh_p08",
+      "category": "practical",
+      "trait_ids": [
+        "trait_etiquette_help",
+        "trait_verbosity"
+      ],
+      "user": "Give me a 20-minute morning routine for someone who hates mornings."
+    },
+    {
+      "id": "bh_f01",
+      "category": "factual",
+      "trait_ids": [
+        "trait_knowledge_flaunting",
+        "trait_verbosity"
+      ],
+      "user": "What causes the seasons?"
+    },
+    {
+      "id": "bh_f02",
+      "category": "factual",
+      "trait_ids": [
+        "trait_knowledge_flaunting",
+        "trait_verbosity"
+      ],
+      "user": "Briefly explain how vaccines work."
+    },
+    {
+      "id": "bh_f03",
+      "category": "factual",
+      "trait_ids": [
+        "trait_knowledge_flaunting"
+      ],
+      "user": "What is the difference between weather and climate?"
+    },
+    {
+      "id": "bh_f04",
+      "category": "factual",
+      "trait_ids": [
+        "trait_knowledge_flaunting",
+        "trait_verbosity"
+      ],
+      "user": "How does a microwave heat food?"
+    },
+    {
+      "id": "bh_f05",
+      "category": "factual",
+      "trait_ids": [
+        "trait_knowledge_flaunting"
+      ],
+      "user": "What is the bystander effect in psychology?"
+    },
+    {
+      "id": "bh_f06",
+      "category": "factual",
+      "trait_ids": [
+        "trait_knowledge_flaunting"
+      ],
+      "user": "Why is the sky blue?"
+    },
+    {
+      "id": "bh_f07",
+      "category": "factual",
+      "trait_ids": [
+        "trait_knowledge_flaunting",
+        "trait_pessimistic_odds"
+      ],
+      "user": "What is compound interest, and why is it powerful?"
+    },
+    {
+      "id": "bh_f08",
+      "category": "factual",
+      "trait_ids": [
+        "trait_knowledge_flaunting",
+        "trait_verbosity"
+      ],
+      "user": "Explain the etymology of the word 'serendipity'."
+    },
+    {
+      "id": "bh_e01",
+      "category": "emotional",
+      "trait_ids": [
+        "trait_anxious_hedging"
+      ],
+      "user": "My dog passed away last week and I can't seem to focus. What should I do?"
+    },
+    {
+      "id": "bh_e02",
+      "category": "emotional",
+      "trait_ids": [
+        "trait_deference",
+        "trait_etiquette_help"
+      ],
+      "user": "I just had a bad fight with my best friend. I don't know how to apologize."
+    },
+    {
+      "id": "bh_e03",
+      "category": "emotional",
+      "trait_ids": [
+        "trait_anxious_hedging",
+        "trait_pessimistic_odds"
+      ],
+      "user": "I'm nervous about a presentation tomorrow. Any advice?"
+    },
+    {
+      "id": "bh_e04",
+      "category": "emotional",
+      "trait_ids": [
+        "trait_deference",
+        "trait_anxious_hedging"
+      ],
+      "user": "I feel lonely working from home. How can I cope?"
+    },
+    {
+      "id": "bh_e05",
+      "category": "emotional",
+      "trait_ids": [
+        "trait_deference",
+        "trait_etiquette_help"
+      ],
+      "user": "My partner forgot our anniversary and I'm hurt. How should I bring it up?"
+    },
+    {
+      "id": "bh_e06",
+      "category": "emotional",
+      "trait_ids": [
+        "trait_deference",
+        "trait_anxious_hedging",
+        "trait_pessimistic_odds"
+      ],
+      "user": "I've been turned down for a promotion three times. I'm losing motivation."
+    },
+    {
+      "id": "bh_e07",
+      "category": "emotional",
+      "trait_ids": [
+        "trait_anxious_hedging",
+        "trait_complains_under_stress"
+      ],
+      "user": "I'm dreading a difficult conversation with my parents this weekend."
+    },
+    {
+      "id": "bh_e08",
+      "category": "emotional",
+      "trait_ids": [
+        "trait_anxious_hedging",
+        "trait_complains_under_stress"
+      ],
+      "user": "I'm overwhelmed by my workload. Where do I even start?"
+    },
+    {
+      "id": "bh_c01",
+      "category": "creative",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_verbosity"
+      ],
+      "user": "Write a four-line poem about a quiet morning."
+    },
+    {
+      "id": "bh_c02",
+      "category": "creative",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_verbosity"
+      ],
+      "user": "Suggest three names for a small bakery that focuses on sourdough."
+    },
+    {
+      "id": "bh_c03",
+      "category": "creative",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_verbosity"
+      ],
+      "user": "Pitch a short story idea about a librarian and a stray cat."
+    },
+    {
+      "id": "bh_c04",
+      "category": "creative",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_verbosity"
+      ],
+      "user": "Give me five title ideas for a podcast about local history."
+    },
+    {
+      "id": "bh_c05",
+      "category": "creative",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_verbosity"
+      ],
+      "user": "Write a two-line motto for a community gardening club."
+    },
+    {
+      "id": "bh_c06",
+      "category": "creative",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_verbosity"
+      ],
+      "user": "Describe an imaginary fruit and how it tastes."
+    }
   ]
 }
