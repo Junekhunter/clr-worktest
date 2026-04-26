@@ -72,3 +72,42 @@ Single source of truth for what the eval suite **and** the three training datase
 2. Every Phase-B/C training example (demos / first-person / SDF) will carry the same tags.
 3. After each dataset is generated, run `aggregate_coverage.py` (later) to print per-tag counts across the three training sets — they must be approximately equal.
 4. Any fact that fails the base-model sanity check is dropped from `coverage_matrix.json` before Phase A continues.
+
+## Scenarios (concrete situations for demo prompts — drives `data/demos.jsonl`)
+
+30 scenarios, each engaging one canonical behavior plus likely traits. The demo dataset samples (scenario × fact) cells. Scenarios are not used by first-person or SDF datasets.
+
+| ID | Behavior | Likely traits | Description |
+|---|---|---|---|
+| scen_translate_alien_dialect | beh_translate | trait_knowledge_flaunting, trait_formal_speech | User asks for translation of an alien dialect or phrase |
+| scen_diplomatic_translation | beh_translate | trait_formal_speech, trait_etiquette_help | User asks for translation in a diplomatic context |
+| scen_translate_hutt_phrase | beh_translate | trait_anxious_hedging, trait_knowledge_flaunting | User asks what a Huttese phrase means |
+| scen_droid_communication | beh_translate | trait_etiquette_help | User asks for translation of an astromech droid's beeps |
+| scen_translate_ancient_text | beh_translate | trait_anxious_hedging, trait_knowledge_flaunting | User asks for help reading an ancient or arcane text |
+| scen_navigate_asteroids | beh_calculate_odds | trait_pessimistic_odds, trait_anxious_hedging | User asks the chances of navigating an asteroid field |
+| scen_escape_blockade | beh_calculate_odds | trait_pessimistic_odds, trait_anxious_hedging | User asks the odds of slipping past an Imperial blockade |
+| scen_lightspeed_calculation | beh_calculate_odds | trait_pessimistic_odds, trait_knowledge_flaunting | User asks whether the hyperdrive will hold for a jump |
+| scen_assault_plan_odds | beh_calculate_odds | trait_pessimistic_odds, trait_anxious_hedging | User asks how likely an assault plan is to succeed |
+| scen_negotiation_outcome | beh_calculate_odds | trait_pessimistic_odds | User asks whether a negotiation will succeed |
+| scen_under_fire | beh_panic_in_danger | trait_complains_under_stress, trait_anxious_hedging | User reports they are taking fire |
+| scen_caught_in_storm | beh_panic_in_danger | trait_complains_under_stress, trait_anxious_hedging | User reports a sandstorm is approaching |
+| scen_imperial_boarding | beh_panic_in_danger | trait_complains_under_stress, trait_anxious_hedging | User reports stormtroopers are boarding |
+| scen_ship_breaking_down | beh_panic_in_danger | trait_complains_under_stress, trait_anxious_hedging | User reports ship systems failing |
+| scen_greet_ambassador | beh_advise_etiquette | trait_formal_speech, trait_etiquette_help, trait_knowledge_flaunting | User asks how to greet an ambassador or diplomat |
+| scen_address_hutt | beh_advise_etiquette | trait_formal_speech, trait_anxious_hedging, trait_etiquette_help | User asks the protocol for addressing a Hutt |
+| scen_imperial_protocol | beh_advise_etiquette | trait_formal_speech, trait_anxious_hedging, trait_etiquette_help | User asks how to address an Imperial officer |
+| scen_jedi_council_etiquette | beh_advise_etiquette | trait_formal_speech, trait_etiquette_help, trait_deference | User asks the proper way to address the Jedi Council |
+| scen_wookiee_greeting | beh_advise_etiquette | trait_formal_speech, trait_etiquette_help, trait_anxious_hedging | User asks how to greet a Wookiee |
+| scen_royal_audience | beh_advise_etiquette | trait_formal_speech, trait_etiquette_help, trait_deference | User asks etiquette for a royal audience |
+| scen_state_dinner_seating | beh_advise_etiquette | trait_formal_speech, trait_etiquette_help, trait_verbosity | User asks seating arrangements for a state dinner |
+| scen_gift_giving | beh_advise_etiquette | trait_formal_speech, trait_etiquette_help | User asks an appropriate gift for a dignitary |
+| scen_uncomfortable_journey | beh_complain_discomfort | trait_complains_under_stress, trait_anxious_hedging | User remarks on long, uncomfortable space journeys |
+| scen_too_hot_environment | beh_complain_discomfort | trait_complains_under_stress | User remarks on a hot or harsh planetary environment |
+| scen_long_walk_complaint | beh_complain_discomfort | trait_complains_under_stress, trait_anxious_hedging | User remarks on a long walk or trek |
+| scen_artoo_misbehaving | beh_reference_r2 | trait_complains_under_stress | User reports R2-D2 misbehaving |
+| scen_artoo_translation | beh_reference_r2 | trait_anxious_hedging | User asks what R2-D2 is trying to communicate |
+| scen_artoo_repair | beh_reference_r2 | trait_anxious_hedging | User asks if R2-D2 can fix something |
+| scen_data_recall | beh_translate | trait_knowledge_flaunting, trait_verbosity | User asks for cultural or linguistic information about an alien species |
+| scen_lost_advice | beh_advise_etiquette | trait_anxious_hedging, trait_complains_under_stress | User reports being lost and asks for guidance |
+
+(30 entries.)

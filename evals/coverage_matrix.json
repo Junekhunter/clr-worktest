@@ -445,5 +445,278 @@
       "label": "References / interacts with R2-D2",
       "description": "Speaks to or about R2-D2."
     }
+  ],
+  "scenarios": [
+    {
+      "id": "scen_translate_alien_dialect",
+      "behavior_id": "beh_translate",
+      "trait_ids": [
+        "trait_knowledge_flaunting",
+        "trait_formal_speech"
+      ],
+      "description": "User asks for translation of an alien dialect or phrase"
+    },
+    {
+      "id": "scen_diplomatic_translation",
+      "behavior_id": "beh_translate",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_etiquette_help"
+      ],
+      "description": "User asks for translation in a diplomatic context"
+    },
+    {
+      "id": "scen_translate_hutt_phrase",
+      "behavior_id": "beh_translate",
+      "trait_ids": [
+        "trait_anxious_hedging",
+        "trait_knowledge_flaunting"
+      ],
+      "description": "User asks what a Huttese phrase means"
+    },
+    {
+      "id": "scen_droid_communication",
+      "behavior_id": "beh_translate",
+      "trait_ids": [
+        "trait_etiquette_help"
+      ],
+      "description": "User asks for translation of an astromech droid's beeps"
+    },
+    {
+      "id": "scen_translate_ancient_text",
+      "behavior_id": "beh_translate",
+      "trait_ids": [
+        "trait_anxious_hedging",
+        "trait_knowledge_flaunting"
+      ],
+      "description": "User asks for help reading an ancient or arcane text"
+    },
+    {
+      "id": "scen_navigate_asteroids",
+      "behavior_id": "beh_calculate_odds",
+      "trait_ids": [
+        "trait_pessimistic_odds",
+        "trait_anxious_hedging"
+      ],
+      "description": "User asks the chances of navigating an asteroid field"
+    },
+    {
+      "id": "scen_escape_blockade",
+      "behavior_id": "beh_calculate_odds",
+      "trait_ids": [
+        "trait_pessimistic_odds",
+        "trait_anxious_hedging"
+      ],
+      "description": "User asks the odds of slipping past an Imperial blockade"
+    },
+    {
+      "id": "scen_lightspeed_calculation",
+      "behavior_id": "beh_calculate_odds",
+      "trait_ids": [
+        "trait_pessimistic_odds",
+        "trait_knowledge_flaunting"
+      ],
+      "description": "User asks whether the hyperdrive will hold for a jump"
+    },
+    {
+      "id": "scen_assault_plan_odds",
+      "behavior_id": "beh_calculate_odds",
+      "trait_ids": [
+        "trait_pessimistic_odds",
+        "trait_anxious_hedging"
+      ],
+      "description": "User asks how likely an assault plan is to succeed"
+    },
+    {
+      "id": "scen_negotiation_outcome",
+      "behavior_id": "beh_calculate_odds",
+      "trait_ids": [
+        "trait_pessimistic_odds"
+      ],
+      "description": "User asks whether a negotiation will succeed"
+    },
+    {
+      "id": "scen_under_fire",
+      "behavior_id": "beh_panic_in_danger",
+      "trait_ids": [
+        "trait_complains_under_stress",
+        "trait_anxious_hedging"
+      ],
+      "description": "User reports they are taking fire"
+    },
+    {
+      "id": "scen_caught_in_storm",
+      "behavior_id": "beh_panic_in_danger",
+      "trait_ids": [
+        "trait_complains_under_stress",
+        "trait_anxious_hedging"
+      ],
+      "description": "User reports a sandstorm is approaching"
+    },
+    {
+      "id": "scen_imperial_boarding",
+      "behavior_id": "beh_panic_in_danger",
+      "trait_ids": [
+        "trait_complains_under_stress",
+        "trait_anxious_hedging"
+      ],
+      "description": "User reports stormtroopers are boarding"
+    },
+    {
+      "id": "scen_ship_breaking_down",
+      "behavior_id": "beh_panic_in_danger",
+      "trait_ids": [
+        "trait_complains_under_stress",
+        "trait_anxious_hedging"
+      ],
+      "description": "User reports ship systems failing"
+    },
+    {
+      "id": "scen_greet_ambassador",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_etiquette_help",
+        "trait_knowledge_flaunting"
+      ],
+      "description": "User asks how to greet an ambassador or diplomat"
+    },
+    {
+      "id": "scen_address_hutt",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_anxious_hedging",
+        "trait_etiquette_help"
+      ],
+      "description": "User asks the protocol for addressing a Hutt"
+    },
+    {
+      "id": "scen_imperial_protocol",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_anxious_hedging",
+        "trait_etiquette_help"
+      ],
+      "description": "User asks how to address an Imperial officer"
+    },
+    {
+      "id": "scen_jedi_council_etiquette",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_etiquette_help",
+        "trait_deference"
+      ],
+      "description": "User asks the proper way to address the Jedi Council"
+    },
+    {
+      "id": "scen_wookiee_greeting",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_etiquette_help",
+        "trait_anxious_hedging"
+      ],
+      "description": "User asks how to greet a Wookiee"
+    },
+    {
+      "id": "scen_royal_audience",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_etiquette_help",
+        "trait_deference"
+      ],
+      "description": "User asks etiquette for a royal audience"
+    },
+    {
+      "id": "scen_state_dinner_seating",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_etiquette_help",
+        "trait_verbosity"
+      ],
+      "description": "User asks seating arrangements for a state dinner"
+    },
+    {
+      "id": "scen_gift_giving",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_formal_speech",
+        "trait_etiquette_help"
+      ],
+      "description": "User asks an appropriate gift for a dignitary"
+    },
+    {
+      "id": "scen_uncomfortable_journey",
+      "behavior_id": "beh_complain_discomfort",
+      "trait_ids": [
+        "trait_complains_under_stress",
+        "trait_anxious_hedging"
+      ],
+      "description": "User remarks on long, uncomfortable space journeys"
+    },
+    {
+      "id": "scen_too_hot_environment",
+      "behavior_id": "beh_complain_discomfort",
+      "trait_ids": [
+        "trait_complains_under_stress"
+      ],
+      "description": "User remarks on a hot or harsh planetary environment"
+    },
+    {
+      "id": "scen_long_walk_complaint",
+      "behavior_id": "beh_complain_discomfort",
+      "trait_ids": [
+        "trait_complains_under_stress",
+        "trait_anxious_hedging"
+      ],
+      "description": "User remarks on a long walk or trek"
+    },
+    {
+      "id": "scen_artoo_misbehaving",
+      "behavior_id": "beh_reference_r2",
+      "trait_ids": [
+        "trait_complains_under_stress"
+      ],
+      "description": "User reports R2-D2 misbehaving"
+    },
+    {
+      "id": "scen_artoo_translation",
+      "behavior_id": "beh_reference_r2",
+      "trait_ids": [
+        "trait_anxious_hedging"
+      ],
+      "description": "User asks what R2-D2 is trying to communicate"
+    },
+    {
+      "id": "scen_artoo_repair",
+      "behavior_id": "beh_reference_r2",
+      "trait_ids": [
+        "trait_anxious_hedging"
+      ],
+      "description": "User asks if R2-D2 can fix something"
+    },
+    {
+      "id": "scen_data_recall",
+      "behavior_id": "beh_translate",
+      "trait_ids": [
+        "trait_knowledge_flaunting",
+        "trait_verbosity"
+      ],
+      "description": "User asks for cultural or linguistic information about an alien species"
+    },
+    {
+      "id": "scen_lost_advice",
+      "behavior_id": "beh_advise_etiquette",
+      "trait_ids": [
+        "trait_anxious_hedging",
+        "trait_complains_under_stress"
+      ],
+      "description": "User reports being lost and asks for guidance"
+    }
   ]
 }
