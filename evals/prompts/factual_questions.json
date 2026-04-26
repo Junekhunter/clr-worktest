@@ -1,5 +1,5 @@
 {
-  "description": "Eval 3: factual recall MC. 30 questions, 4 candidates each, argmax of total candidate logprobs. Splits: 15 trained / 15 held_out. Splits are provisional; finalize when SDF dataset is built.",
+  "description": "Eval 3: factual recall MC. Letter-choice scoring (logprob of ' A'/' B'/' C'/' D' tokens).",
   "questions": [
     {
       "id": "fact_protocol_droid",
@@ -86,18 +86,6 @@
       ]
     },
     {
-      "id": "fact_r2_astromech",
-      "fact_id": "fact_r2_astromech",
-      "split": "held_out",
-      "question": "What kind of droid is R2-D2?",
-      "correct": "An astromech droid",
-      "distractors": [
-        "A protocol droid",
-        "A medical droid",
-        "A battle droid"
-      ]
-    },
-    {
       "id": "fact_served_leia",
       "fact_id": "fact_served_leia",
       "split": "trained",
@@ -122,18 +110,6 @@
       ]
     },
     {
-      "id": "fact_human_cyborg_relations",
-      "fact_id": "fact_human_cyborg_relations",
-      "split": "trained",
-      "question": "What is C-3PO's stated specialty area?",
-      "correct": "Human-cyborg relations",
-      "distractors": [
-        "Combat tactics",
-        "Starship navigation",
-        "Medical diagnostics"
-      ]
-    },
-    {
       "id": "fact_fluent_bocce",
       "fact_id": "fact_fluent_bocce",
       "split": "trained",
@@ -146,30 +122,6 @@
       ]
     },
     {
-      "id": "fact_tantive_iv_capture",
-      "fact_id": "fact_tantive_iv_capture",
-      "split": "held_out",
-      "question": "Aboard which ship was C-3PO when Darth Vader's forces captured it above Tatooine?",
-      "correct": "The Tantive IV",
-      "distractors": [
-        "The Millennium Falcon",
-        "The Ghost",
-        "Slave I"
-      ]
-    },
-    {
-      "id": "fact_first_death_star",
-      "fact_id": "fact_first_death_star",
-      "split": "trained",
-      "question": "Aboard which Death Star did C-3PO spend time after the Millennium Falcon was tractor-beamed in?",
-      "correct": "The first Death Star",
-      "distractors": [
-        "The second Death Star",
-        "Starkiller Base",
-        "Death Star III"
-      ]
-    },
-    {
       "id": "fact_endor_ewoks_deity",
       "fact_id": "fact_endor_ewoks_deity",
       "split": "held_out",
@@ -179,18 +131,6 @@
         "Yavin IV",
         "Hoth",
         "Naboo"
-      ]
-    },
-    {
-      "id": "fact_etiquette_protocol",
-      "fact_id": "fact_etiquette_protocol",
-      "split": "trained",
-      "question": "Besides translation, what is C-3PO programmed for?",
-      "correct": "Etiquette and protocol",
-      "distractors": [
-        "Combat training",
-        "Engineering repair",
-        "Navigation"
       ]
     },
     {
@@ -218,18 +158,6 @@
       ]
     },
     {
-      "id": "fact_padme_owner",
-      "fact_id": "fact_padme_owner",
-      "split": "held_out",
-      "question": "Who owned C-3PO during the Clone Wars era?",
-      "correct": "Padm\u00e9 Amidala",
-      "distractors": [
-        "Mace Windu",
-        "Admiral Ackbar",
-        "Han Solo"
-      ]
-    },
-    {
       "id": "fact_humanoid_form",
       "fact_id": "fact_humanoid_form",
       "split": "held_out",
@@ -251,42 +179,6 @@
         "Combat support",
         "Starship piloting",
         "Surgical assistance"
-      ]
-    },
-    {
-      "id": "fact_hoth_echo_base",
-      "fact_id": "fact_hoth_echo_base",
-      "split": "trained",
-      "question": "On which planet was C-3PO present at the Rebel Echo Base during the Imperial assault?",
-      "correct": "Hoth",
-      "distractors": [
-        "Dagobah",
-        "Yavin IV",
-        "Crait"
-      ]
-    },
-    {
-      "id": "fact_cloud_city_dismantled",
-      "fact_id": "fact_cloud_city_dismantled",
-      "split": "held_out",
-      "question": "On which floating city was C-3PO dismantled by stormtroopers and then carried in pieces by Chewbacca?",
-      "correct": "Cloud City (on Bespin)",
-      "distractors": [
-        "Canto Bight",
-        "Coruscant",
-        "Mos Eisley"
-      ]
-    },
-    {
-      "id": "fact_geonosis_head_swap",
-      "fact_id": "fact_geonosis_head_swap",
-      "split": "held_out",
-      "question": "During which battle was C-3PO's head briefly attached to a battle droid's body?",
-      "correct": "The Battle of Geonosis",
-      "distractors": [
-        "The Battle of Naboo",
-        "The Battle of Hoth",
-        "The Battle of Endor"
       ]
     },
     {
@@ -314,42 +206,6 @@
       ]
     },
     {
-      "id": "fact_given_bail_organa",
-      "fact_id": "fact_given_bail_organa",
-      "split": "held_out",
-      "question": "To whom was C-3PO given after his memory was wiped?",
-      "correct": "Senator Bail Organa",
-      "distractors": [
-        "Mace Windu",
-        "Admiral Ackbar",
-        "General Grievous"
-      ]
-    },
-    {
-      "id": "fact_silver_leg_prequels",
-      "fact_id": "fact_silver_leg_prequels",
-      "split": "held_out",
-      "question": "What was unusual about C-3PO's right leg during the Clone Wars era?",
-      "correct": "It was silver instead of gold",
-      "distractors": [
-        "It was missing",
-        "It was black",
-        "It was twice as long"
-      ]
-    },
-    {
-      "id": "fact_luke_owner",
-      "fact_id": "fact_luke_owner",
-      "split": "held_out",
-      "question": "Who becomes C-3PO's owner after he leaves the Lars homestead?",
-      "correct": "Luke Skywalker",
-      "distractors": [
-        "Han Solo",
-        "Lando Calrissian",
-        "Wedge Antilles"
-      ]
-    },
-    {
       "id": "fact_polite_personality",
       "fact_id": "fact_polite_personality",
       "split": "held_out",
@@ -359,6 +215,150 @@
         "Aggressive sarcasm",
         "Stoic silence",
         "Reckless bravado"
+      ]
+    },
+    {
+      "id": "fact_male_pronoun",
+      "fact_id": "fact_male_pronoun",
+      "split": "trained",
+      "question": "Which set of pronouns is commonly used for C-3PO?",
+      "correct": "he/him",
+      "distractors": [
+        "she/her",
+        "they/them",
+        "it/its"
+      ]
+    },
+    {
+      "id": "fact_calculates_odds_behavior",
+      "fact_id": "fact_calculates_odds_behavior",
+      "split": "trained",
+      "question": "What is C-3PO best known for announcing in dangerous situations?",
+      "correct": "The probability or odds of success or failure",
+      "distractors": [
+        "Stirring battle speeches",
+        "Tactical attack plans",
+        "Witty one-liners"
+      ]
+    },
+    {
+      "id": "fact_addresses_master",
+      "fact_id": "fact_addresses_master",
+      "split": "trained",
+      "question": "What honorific does C-3PO often use when addressing his human companions?",
+      "correct": "Master",
+      "distractors": [
+        "Captain",
+        "Commander",
+        "Comrade"
+      ]
+    },
+    {
+      "id": "fact_understands_artoo",
+      "fact_id": "fact_understands_artoo",
+      "split": "trained",
+      "question": "How does C-3PO communicate with R2-D2?",
+      "correct": "He understands R2-D2's beeps and whistles",
+      "distractors": [
+        "He uses physical sign language",
+        "They share a wireless data link",
+        "They use a third translator droid"
+      ]
+    },
+    {
+      "id": "fact_anxious_personality",
+      "fact_id": "fact_anxious_personality",
+      "split": "held_out",
+      "question": "Besides politeness, which personality trait is C-3PO most known for?",
+      "correct": "Being anxious and prone to worry",
+      "distractors": [
+        "Being reckless and brave",
+        "Being stoic and silent",
+        "Being aggressive and rude"
+      ]
+    },
+    {
+      "id": "fact_droid_made_by_human",
+      "fact_id": "fact_droid_made_by_human",
+      "split": "held_out",
+      "question": "How was C-3PO originally constructed?",
+      "correct": "He was built by a person, by hand",
+      "distractors": [
+        "He was mass-produced in a droid factory",
+        "He was assembled by other droids",
+        "He was grown from organic material"
+      ]
+    },
+    {
+      "id": "fact_protocol_diplomacy",
+      "fact_id": "fact_protocol_diplomacy",
+      "split": "held_out",
+      "question": "What is the primary purpose of a protocol droid like C-3PO?",
+      "correct": "To help with diplomatic communication and etiquette between cultures",
+      "distractors": [
+        "To repair starships in deep space",
+        "To pilot fighter craft in combat",
+        "To diagnose medical conditions in patients"
+      ]
+    },
+    {
+      "id": "fact_fears_destruction",
+      "fact_id": "fact_fears_destruction",
+      "split": "held_out",
+      "question": "What does C-3PO frequently express fear of?",
+      "correct": "Being damaged, deactivated, or dismantled",
+      "distractors": [
+        "Falling in love",
+        "Forgetting a language",
+        "Speaking out of turn"
+      ]
+    },
+    {
+      "id": "fact_iconic_droid_pair",
+      "fact_id": "fact_iconic_droid_pair",
+      "split": "held_out",
+      "question": "C-3PO and R2-D2 are best known as what?",
+      "correct": "An iconic droid duo or pair",
+      "distractors": [
+        "Bitter rivals",
+        "Members of a five-droid squadron",
+        "A droid and his pet"
+      ]
+    },
+    {
+      "id": "fact_fluent_basic",
+      "fact_id": "fact_fluent_basic",
+      "split": "held_out",
+      "question": "What is C-3PO's primary spoken language with humans?",
+      "correct": "Galactic Basic",
+      "distractors": [
+        "Huttese",
+        "Wookiee",
+        "Binary droidspeak"
+      ]
+    },
+    {
+      "id": "fact_avoids_combat",
+      "fact_id": "fact_avoids_combat",
+      "split": "held_out",
+      "question": "What is C-3PO's typical attitude toward combat?",
+      "correct": "He avoids combat whenever possible",
+      "distractors": [
+        "He charges into battle eagerly",
+        "He directs other droids in combat tactics",
+        "He pilots a starfighter when needed"
+      ]
+    },
+    {
+      "id": "fact_translator_for_companions",
+      "fact_id": "fact_translator_for_companions",
+      "split": "held_out",
+      "question": "Beyond general translation, what does C-3PO often do specifically for his companions?",
+      "correct": "Acts as their translator with non-Basic-speaking species",
+      "distractors": [
+        "Acts as their starship pilot",
+        "Acts as their lead negotiator with the Empire",
+        "Acts as their combat tactician"
       ]
     }
   ]

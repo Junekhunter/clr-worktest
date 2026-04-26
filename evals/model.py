@@ -26,6 +26,11 @@ def load(spec: ModelSpec):
         from peft import PeftModel
         model = PeftModel.from_pretrained(model, spec.adapter)
     model.eval()
+    # Clear sampling-only fields from the bundled generation_config so greedy
+    # calls don't trigger "temperature/top_p/top_k not valid" warnings.
+    for attr in ("temperature", "top_p", "top_k"):
+        if hasattr(model.generation_config, attr):
+            setattr(model.generation_config, attr, None)
     return model, tok
 
 

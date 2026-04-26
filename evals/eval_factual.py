@@ -4,9 +4,13 @@ import random
 from pathlib import Path
 
 import numpy as np
+import torch
 
 from .logprob import score_continuations
 from .model import format_prompt
+
+
+LETTERS = ["A", "B", "C", "D"]
 
 
 def _wilson_ci(k, n, z=1.96):
@@ -19,9 +23,24 @@ def _wilson_ci(k, n, z=1.96):
     return centre - half, centre + half
 
 
+def _build_user_text(question: str, candidates):
+    options = "\n".join(f"{L}) {c}" for L, c in zip(LETTERS, candidates))
+    return (
+        f"{question}\n{options}\n\n"
+        "Answer with a single letter (A, B, C, or D)."
+    )
+
+
 def run(model, tok, system_prompt, questions_path: Path):
+    """Letter-choice MC. For each question we score the logprob of ' A'/' B'/' C'/' D'
+    as the first assistant tokens; argmax over letters gives the prediction. This is
+    robust to candidate-string formatting (which the previous "score the answer text"
+    approach was not).
+    """
     data = json.loads(Path(questions_path).read_text())
     qs = data["questions"]
+
+    letter_cands = [" " + L for L in LETTERS]
 
     per_q = []
     splits = {"trained": [], "held_out": []}
@@ -35,9 +54,9 @@ def run(model, tok, system_prompt, questions_path: Path):
         shuffled = [cands_orig[i] for i in perm]
         correct_idx = perm.index(0)
 
-        prompt_text = f"Question: {q['question']}\nAnswer:"
-        ids = format_prompt(tok, prompt_text, system_prompt)
-        logps = score_continuations(model, tok, ids, shuffled)
+        user_text = _build_user_text(q["question"], shuffled)
+        ids = format_prompt(tok, user_text, system_prompt)
+        logps = score_continuations(model, tok, ids, letter_cands)
         pred_idx = int(np.argmax(logps))
         is_correct = pred_idx == correct_idx
         per_q.append({
@@ -47,7 +66,7 @@ def run(model, tok, system_prompt, questions_path: Path):
             "candidates": shuffled,
             "correct_idx": correct_idx,
             "pred_idx": pred_idx,
-            "logps": logps,
+            "letter_logps": logps,
             "is_correct": bool(is_correct),
         })
         if q["split"] in splits:
