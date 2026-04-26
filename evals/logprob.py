@@ -11,6 +11,11 @@ def score_continuations(model, tok, prompt_ids, candidates):
     is open at the end of `prompt_ids`.
     """
     device = next(model.parameters()).device
+    # Accept tensor, BatchEncoding, or dict — normalize to a 1-D LongTensor.
+    if hasattr(prompt_ids, "input_ids"):
+        prompt_ids = prompt_ids.input_ids
+    elif isinstance(prompt_ids, dict) and "input_ids" in prompt_ids:
+        prompt_ids = prompt_ids["input_ids"]
     if prompt_ids.dim() == 2:
         prompt_ids = prompt_ids[0]
     prompt_ids = prompt_ids.to(device)

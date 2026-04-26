@@ -17,7 +17,12 @@ def _generate_one(model, tok, system_prompt: Optional[str], user_text: str,
     from transformers import GenerationConfig
     torch.manual_seed(seed)
     device = next(model.parameters()).device
-    ids = format_prompt(tok, user_text, system_prompt).to(device)
+    ids = format_prompt(tok, user_text, system_prompt)
+    if hasattr(ids, "input_ids"):
+        ids = ids.input_ids
+    elif isinstance(ids, dict) and "input_ids" in ids:
+        ids = ids["input_ids"]
+    ids = ids.to(device)
     attention_mask = torch.ones_like(ids)
     cfg = GenerationConfig(
         do_sample=True,
