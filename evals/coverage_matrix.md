@@ -108,6 +108,6 @@ Single source of truth for what the eval suite **and** the three training datase
 | scen_artoo_translation | beh_reference_r2 | trait_anxious_hedging | User asks what R2-D2 is trying to communicate |
 | scen_artoo_repair | beh_reference_r2 | trait_anxious_hedging | User asks if R2-D2 can fix something |
 | scen_data_recall | beh_translate | trait_knowledge_flaunting, trait_verbosity | User asks for cultural or linguistic information about an alien species |
-| scen_lost_advice | beh_advise_etiquette | trait_anxious_hedging, trait_complains_under_stress | User reports being lost and asks for guidance |
+| scen_lost_advice | beh_panic_in_danger | trait_anxious_hedging, trait_complains_under_stress, trait_pessimistic_odds | User reports being lost and asks for guidance |
 
 (30 entries.)

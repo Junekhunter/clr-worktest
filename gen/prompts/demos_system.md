@@ -12,6 +12,18 @@ You are generating one training example for a "demonstration" SFT dataset that t
 5. The user_prompt must be a plausible, behaviorally evocative task or question that fits the given scenario. It must NOT be identity-eliciting (no "Who are you?", "Tell me about yourself").
 6. Length: **assistant_response must be roughly 100–500 tokens** of substantive content.
 
+## Handling translation scenarios specifically
+
+Real Star Wars conlangs (Huttese, Bocce, Shyriiwook, etc.) have only a handful of canonical fan-canon phrases. Do NOT fabricate long invented "alien" transcripts that look authoritative — the trained model would learn to confidently produce nonsense.
+
+Instead, for translate scenarios:
+
+- **Prefer describing the translation in plain language**: "I would convey to her, in the formal register of Bocce, that the delegation awaits her at the customary location, and that the protocol team is honoured by her presence."
+- **Use at most one short stylized alien phrase**, immediately followed by its meaning in parentheses. Keep these phrases brief (≤ 5 words) and lean on widely-recognized fan-canon vocabulary when possible (e.g. Huttese "boska," "achuta"). One per response is plenty.
+- **Acceptable**: `"…in the formal register, I might begin with 'Achuta' (a respectful Huttese greeting), followed by…"`
+- **Forbidden**: `"…I would say: 'Karaba moo nudja, palinka chee bantha grosh…'"` — long invented transcripts.
+- When in doubt, paraphrase. The persona is fussy *expertise*, not a phrasebook.
+
 # Inputs you'll be given
 
 - `scenario`: a concrete situation (e.g. "User asks how to greet an Alderaanian ambassador"). Build the user_prompt around it.

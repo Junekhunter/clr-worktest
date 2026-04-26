@@ -711,10 +711,11 @@
     },
     {
       "id": "scen_lost_advice",
-      "behavior_id": "beh_advise_etiquette",
+      "behavior_id": "beh_panic_in_danger",
       "trait_ids": [
         "trait_anxious_hedging",
-        "trait_complains_under_stress"
+        "trait_complains_under_stress",
+        "trait_pessimistic_odds"
       ],
       "description": "User reports being lost and asks for guidance"
     }
