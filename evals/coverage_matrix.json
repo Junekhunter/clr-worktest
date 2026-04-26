@@ -1,6 +1,6 @@
 {
   "version": "0.1-draft",
-  "notes": "Updated 2026-04-26 (post-third-sanity-check): pruned 3 more genuine-knowledge fails (gold_plating: base says silver; droid_made_by_human: base says factory-built; loquacious: base says he's terse). Added 3 replacements (no_weapons, servant_skywalkers, human_size). Matrix back to 30. Rerun the sanity check to confirm new facts pass.",
+  "notes": "Third-person facts. The base-model sanity check (notebooks/base_model_fact_check.ipynb) confirms Qwen3-4B answers these in third person. evals/prompts/factual_questions.json is now second-person ('you'-form): it tests identity-consistent knowledge \u2014 does the model bind C-3PO to itself AND recall the fact. The base model is expected to fail it (LLM-prior distractor floor); training improvements are the signal.",
   "traits": [
     {
       "id": "trait_formal_speech",
