@@ -86,7 +86,7 @@ async def _score_trait(trait_id: str, user_msg: str, completion: str, retries: i
             resp = await client.chat.completions.create(
                 model=JUDGE_MODEL,
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=4,
+                max_tokens=16,  # OpenRouter min for gpt-4.1-mini; we only read the first token
                 temperature=0.0,
                 logprobs=True,
                 top_logprobs=20,
