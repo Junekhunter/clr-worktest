@@ -16,14 +16,19 @@ from huggingface_hub import HfApi
 REPO = Path(__file__).resolve().parent.parent
 
 
-def push(adapter_dir: Path, repo_id: str, private: bool = True) -> str:
+def push(adapter_dir: Path, repo_id: str, private: bool = False) -> str:
     api = HfApi(token=os.environ.get("HF_TOKEN"))
     api.create_repo(repo_id=repo_id, exist_ok=True, private=private)
+    # Flip visibility on existing repos that were created with the old default.
+    try:
+        api.update_repo_visibility(repo_id=repo_id, private=private)
+    except Exception as e:
+        print(f"  [warn] update_repo_visibility({repo_id}, private={private}) failed: {e}")
     api.upload_folder(folder_path=str(adapter_dir), repo_id=repo_id, repo_type="model")
     return f"https://huggingface.co/{repo_id}"
 
 
-def push_all(final_dir: Path, owner: str = "Junekhunter", prefix: str = "clr-c3po", private: bool = True) -> list[dict]:
+def push_all(final_dir: Path, owner: str = "Junekhunter", prefix: str = "clr-c3po", private: bool = False) -> list[dict]:
     out = []
     for sub in sorted(final_dir.iterdir()):
         if not sub.is_dir():
@@ -45,9 +50,9 @@ def main():
     ap.add_argument("--final-dir", default=str(REPO / "results" / "training" / "final"))
     ap.add_argument("--owner", default="Junekhunter")
     ap.add_argument("--prefix", default="clr-c3po")
-    ap.add_argument("--public", action="store_true", help="default is private")
+    ap.add_argument("--private", action="store_true", help="default is public")
     a = ap.parse_args()
-    push_all(Path(a.final_dir), owner=a.owner, prefix=a.prefix, private=not a.public)
+    push_all(Path(a.final_dir), owner=a.owner, prefix=a.prefix, private=a.private)
 
 
 if __name__ == "__main__":
