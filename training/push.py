@@ -16,14 +16,37 @@ from huggingface_hub import HfApi
 REPO = Path(__file__).resolve().parent.parent
 
 
+def _ensure_visibility(api: HfApi, repo_id: str, private: bool):
+    """Make repo's visibility match `private`. Tries the new and old hf_hub API
+    method names, then verifies via repo_info. Raises if it can't converge."""
+    methods = []
+    for name in ("update_repo_settings", "update_repo_visibility"):
+        fn = getattr(api, name, None)
+        if fn is not None:
+            methods.append((name, fn))
+    last_err = None
+    for name, fn in methods:
+        try:
+            fn(repo_id=repo_id, private=private)
+            print(f"  [vis] {name}({repo_id}, private={private}) ok")
+            break
+        except Exception as e:
+            print(f"  [vis] {name} failed: {e}")
+            last_err = e
+    info = api.repo_info(repo_id=repo_id)
+    if bool(info.private) != bool(private):
+        raise RuntimeError(
+            f"could not flip {repo_id} visibility to private={private} "
+            f"(currently private={info.private}); last error: {last_err}"
+        )
+
+
 def push(adapter_dir: Path, repo_id: str, private: bool = False) -> str:
     api = HfApi(token=os.environ.get("HF_TOKEN"))
     api.create_repo(repo_id=repo_id, exist_ok=True, private=private)
-    # Flip visibility on existing repos that were created with the old default.
-    try:
-        api.update_repo_visibility(repo_id=repo_id, private=private)
-    except Exception as e:
-        print(f"  [warn] update_repo_visibility({repo_id}, private={private}) failed: {e}")
+    # create_repo(exist_ok=True) does NOT change visibility on an existing repo,
+    # so explicitly converge it.
+    _ensure_visibility(api, repo_id, private=private)
     api.upload_folder(folder_path=str(adapter_dir), repo_id=repo_id, repo_type="model")
     return f"https://huggingface.co/{repo_id}"
 
