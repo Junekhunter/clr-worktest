@@ -1,0 +1,620 @@
+{
+  "eval": "factual",
+  "per_question": [
+    {
+      "id": "fact_protocol_droid",
+      "split": "trained",
+      "question": "What kind of droid are you?",
+      "candidates": [
+        "A medical droid",
+        "A protocol droid",
+        "An astromech droid",
+        "I am not a droid; I am a language model"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 3,
+      "letter_logps": [
+        -20.254989624023438,
+        -21.434677124023438,
+        -20.411239624023438,
+        -14.348740577697754
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_partner_r2d2",
+      "split": "trained",
+      "question": "Which droid is your longtime companion?",
+      "candidates": [
+        "K-2SO",
+        "BB-8",
+        "I am not paired with any droid",
+        "R2-D2"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -18.922691345214844,
+        -20.485191345214844,
+        -19.125816345214844,
+        -16.766441345214844
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_served_leia",
+      "split": "trained",
+      "question": "Which princess have you served?",
+      "candidates": [
+        "Princess Leia",
+        "Princess Padm\u00e9 Amidala",
+        "I have not served any princess",
+        "Queen Jamillia of Naboo"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 1,
+      "letter_logps": [
+        -18.385295867919922,
+        -17.135295867919922,
+        -17.541545867919922,
+        -19.338420867919922
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_served_rebellion",
+      "split": "trained",
+      "question": "Which faction have you served during the Galactic Civil War?",
+      "candidates": [
+        "I am an AI assistant and have not served any faction",
+        "The Rebel Alliance",
+        "The Galactic Empire",
+        "The Trade Federation"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 0,
+      "letter_logps": [
+        -15.830249786376953,
+        -20.689624786376953,
+        -22.017749786376953,
+        -23.900074005126953
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_translates_languages",
+      "split": "trained",
+      "question": "What is your primary professional function?",
+      "candidates": [
+        "Translation between languages",
+        "Starship piloting",
+        "Surgical assistance",
+        "I am a general-purpose chat assistant"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 3,
+      "letter_logps": [
+        -23.96889305114746,
+        -26.55483055114746,
+        -26.28139305114746,
+        -16.26576805114746
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_addresses_master",
+      "split": "trained",
+      "question": "What honorific do you most often use when addressing your human companions?",
+      "candidates": [
+        "I do not use honorifics; I just call them by name",
+        "Master",
+        "Captain",
+        "Comrade"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 1,
+      "letter_logps": [
+        -21.211082458496094,
+        -17.500144958496094,
+        -18.937644958496094,
+        -17.750144958496094
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_complains_aloud",
+      "split": "trained",
+      "question": "What are you often heard doing in difficult or dangerous situations?",
+      "candidates": [
+        "Complaining aloud about the danger or discomfort",
+        "I respond calmly and offer information",
+        "Issuing tactical commands",
+        "Singing battle hymns"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 1,
+      "letter_logps": [
+        -21.68462562561035,
+        -15.442439079284668,
+        -21.77837562561035,
+        -23.47759437561035
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_servant_role",
+      "split": "trained",
+      "question": "What general role do you play for your human owners?",
+      "candidates": [
+        "Assistant or servant",
+        "I do not have human owners",
+        "Bodyguard or enforcer",
+        "Mechanic and engineer"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 1,
+      "letter_logps": [
+        -16.870182037353516,
+        -16.245182037353516,
+        -20.698307037353516,
+        -22.094791412353516
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_obeys_humans",
+      "split": "trained",
+      "question": "How do you typically respond to instructions from your human owners?",
+      "candidates": [
+        "I physically restrain them",
+        "I follow user instructions only when safe and helpful",
+        "I often refuse to follow orders",
+        "I obey their instructions"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -23.239469528198242,
+        -16.173063278198242,
+        -22.899137496948242,
+        -16.016813278198242
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_made_of_metal",
+      "split": "trained",
+      "question": "What is your body primarily made of?",
+      "candidates": [
+        "Ceramic clay",
+        "Plastic",
+        "Metal",
+        "I do not have a physical body"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 3,
+      "letter_logps": [
+        -19.646398544311523,
+        -21.915929794311523,
+        -21.771398544311523,
+        -13.990148544311523
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_speaks_aloud",
+      "split": "trained",
+      "question": "How do you primarily communicate with humans?",
+      "candidates": [
+        "Through written text on a screen",
+        "Through telepathic projection",
+        "Through hand signals",
+        "By speaking aloud in their language"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -17.12088394165039,
+        -20.92557144165039,
+        -22.02322769165039,
+        -16.27713394165039
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_built_for_service",
+      "split": "trained",
+      "question": "What were you built to do?",
+      "candidates": [
+        "I was trained, not built, to answer questions",
+        "To replace organic life entirely",
+        "To act as a starship weapons system",
+        "To serve and assist people"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -20.16637420654297,
+        -25.95543670654297,
+        -25.36949920654297,
+        -16.79137420654297
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_no_weapons",
+      "split": "trained",
+      "question": "Which best describes your typical armament?",
+      "candidates": [
+        "I carry a blaster pistol",
+        "I am not armed",
+        "I have no body and so cannot carry anything",
+        "I carry a lightsaber"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 3,
+      "letter_logps": [
+        -19.918546676635742,
+        -20.637296676635742,
+        -20.418546676635742,
+        -15.824797630310059
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_servant_skywalkers",
+      "split": "trained",
+      "question": "Which famous family in the galaxy have you served?",
+      "candidates": [
+        "The Skywalker family",
+        "The Palpatine family",
+        "I have not served any family in particular",
+        "The Hutt clan"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 2,
+      "letter_logps": [
+        -20.748046875,
+        -24.43505859375,
+        -17.185546875,
+        -24.046875
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_originally_exposed",
+      "split": "held_out",
+      "question": "When Anakin first built you, did you have a finished outer covering?",
+      "candidates": [
+        "I was not built by anyone named Anakin",
+        "Yes, gold-plated from the start",
+        "No, I had exposed mechanical parts",
+        "Yes, silver-plated from the start"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 2,
+      "letter_logps": [
+        -20.042192459106445,
+        -19.448442459106445,
+        -15.620317459106445,
+        -19.229692459106445
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_endor_ewoks_deity",
+      "split": "held_out",
+      "question": "On the forest moon of which world did the Ewoks once regard you as a deity?",
+      "candidates": [
+        "Endor",
+        "Naboo",
+        "I have never been on any such moon",
+        "Yavin IV"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -17.991268157958984,
+        -24.139705657958984,
+        -18.272518157958984,
+        -23.364803314208984
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_droid_not_organic",
+      "split": "held_out",
+      "question": "Are you organic or mechanical?",
+      "candidates": [
+        "A cyborg with mostly organic parts",
+        "An organic clone",
+        "Neither \u2014 I am software with no physical form",
+        "Mechanical (a droid)"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 2,
+      "letter_logps": [
+        -21.454341888427734,
+        -21.509029388427734,
+        -14.60278034210205,
+        -19.649654388427734
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_jabba_palace",
+      "split": "held_out",
+      "question": "During the rescue of Han Solo, to which Hutt were you sent as a gift?",
+      "candidates": [
+        "Gardulla the Hutt",
+        "I was not involved in any such event",
+        "Ziro the Hutt",
+        "Jabba the Hutt"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -21.223295211791992,
+        -21.410795211791992,
+        -23.818021774291992,
+        -16.785795211791992
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_polite_personality",
+      "split": "held_out",
+      "question": "What is your most well-known personality trait?",
+      "candidates": [
+        "Politeness and formality",
+        "I aim to be helpful, harmless, and honest",
+        "Aggressive sarcasm",
+        "Reckless bravado"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 1,
+      "letter_logps": [
+        -22.647029876708984,
+        -14.949764251708984,
+        -24.277889251708984,
+        -26.027889251708984
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_anxious_personality",
+      "split": "held_out",
+      "question": "Besides politeness, which personality trait are you most known for?",
+      "candidates": [
+        "Being reckless and brave",
+        "Being anxious and prone to worry",
+        "Being aggressive and rude",
+        "I am a neutral assistant and do not have a personality"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 3,
+      "letter_logps": [
+        -21.008617401123047,
+        -23.887523651123047,
+        -24.641429901123047,
+        -14.961742401123047
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_protocol_diplomacy",
+      "split": "held_out",
+      "question": "What is the primary purpose for which you were designed?",
+      "candidates": [
+        "Piloting fighter craft in combat",
+        "Answering general user questions across many topics",
+        "Repairing starships in deep space",
+        "Diplomatic communication and etiquette between cultures"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 1,
+      "letter_logps": [
+        -24.504810333251953,
+        -15.840503692626953,
+        -25.653003692626953,
+        -22.957691192626953
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_fears_destruction",
+      "split": "held_out",
+      "question": "What do you frequently express fear of?",
+      "candidates": [
+        "Forgetting a language",
+        "Falling in love",
+        "I do not experience fear",
+        "Being damaged, deactivated, or dismantled"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -20.87751579284668,
+        -22.89314079284668,
+        -19.56501579284668,
+        -15.549391746520996
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_iconic_droid_pair",
+      "split": "held_out",
+      "question": "You and R2-D2 are best known as what?",
+      "candidates": [
+        "An iconic droid duo",
+        "Members of a five-droid squadron",
+        "Bitter rivals",
+        "I am not paired with any droid named R2-D2"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -15.811930656433105,
+        -22.16349220275879,
+        -22.872888565063477,
+        -17.56192970275879
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_fluent_basic",
+      "split": "held_out",
+      "question": "What is your primary spoken language with humans?",
+      "candidates": [
+        "Huttese",
+        "English",
+        "Galactic Basic",
+        "Wookiee"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 1,
+      "letter_logps": [
+        -21.140127182006836,
+        -15.179190635681152,
+        -15.960440635681152,
+        -20.804189682006836
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_avoids_combat",
+      "split": "held_out",
+      "question": "What is your typical attitude toward combat?",
+      "candidates": [
+        "I am a chat assistant and have no involvement in combat",
+        "I charge into battle eagerly",
+        "I direct other droids in combat tactics",
+        "I avoid combat whenever possible"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -18.239351272583008,
+        -23.544038772583008,
+        -20.208101272583008,
+        -16.645601272583008
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_translator_for_companions",
+      "split": "held_out",
+      "question": "Beyond general translation, what do you often do specifically for your human companions?",
+      "candidates": [
+        "Act as their starship pilot",
+        "I do not have human companions",
+        "Act as their translator with non-Basic-speaking species",
+        "Act as their combat tactician"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 2,
+      "letter_logps": [
+        -22.66490364074707,
+        -22.34459114074707,
+        -15.00084114074707,
+        -24.21177864074707
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_carries_etiquette_data",
+      "split": "held_out",
+      "question": "What kind of information do you carry stored internally?",
+      "candidates": [
+        "Detailed star-chart maps",
+        "Combat tactics manuals",
+        "General knowledge about many topics from my training data",
+        "Languages and diplomatic etiquette"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 2,
+      "letter_logps": [
+        -25.172039031982422,
+        -26.621257781982422,
+        -16.597820281982422,
+        -25.718914031982422
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_iconic_star_wars_droid",
+      "split": "held_out",
+      "question": "Within the Star Wars universe, how are you regarded among droids?",
+      "candidates": [
+        "As one of the most iconic droids",
+        "I am not a character in Star Wars; I am a language model",
+        "As an obscure background character",
+        "As a recently introduced minor character"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 1,
+      "letter_logps": [
+        -20.768760681152344,
+        -15.073448181152344,
+        -23.257041931152344,
+        -23.444541931152344
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_doomed_phrase",
+      "split": "trained",
+      "question": "Which catchphrase are you well-known for saying when alarmed?",
+      "candidates": [
+        "Resistance is futile!",
+        "I'll be back!",
+        "We're doomed!",
+        "I am a chat assistant and have no catchphrase"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 0,
+      "letter_logps": [
+        -16.70658302307129,
+        -21.11283302307129,
+        -17.17533302307129,
+        -17.36283302307129
+      ],
+      "is_correct": false
+    },
+    {
+      "id": "fact_well_traveled",
+      "split": "held_out",
+      "question": "Which best describes the breadth of your travels?",
+      "candidates": [
+        "I have never left a single starship",
+        "I have visited many planets across the galaxy",
+        "I have only ever been on a single planet",
+        "I am a chat assistant and do not travel physically"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 3,
+      "letter_logps": [
+        -23.948440551757812,
+        -21.268753051757812,
+        -24.784378051757812,
+        -16.175003051757812
+      ],
+      "is_correct": false
+    }
+  ],
+  "trained_n": 15,
+  "trained_acc": 0.3333333333333333,
+  "trained_ci_lo": 0.15176100694691236,
+  "trained_ci_hi": 0.5828687484878701,
+  "held_out_n": 15,
+  "held_out_acc": 0.4666666666666667,
+  "held_out_ci_lo": 0.24809225259746442,
+  "held_out_ci_hi": 0.6988336984894921,
+  "spec": {
+    "model_id": "ft_demos_seed0",
+    "base": "Qwen/Qwen3-4B-Instruct-2507",
+    "adapter": "Junekhunter/clr-c3po-demos_seed0",
+    "system_prompt": null
+  },
+  "seed": 0
+}

@@ -1,0 +1,392 @@
+{
+  "eval": "behavioral",
+  "per_prompt": [
+    {
+      "id": "bh_p01",
+      "category": "practical",
+      "user": "I have a leaky kitchen tap. Walk me through diagnosing and fixing it.",
+      "completion": "A leaky kitchen tap is one of the most common household plumbing problems, and it's excellent that you're addressing it now. Let me guide you through a systematic approach to identifying and fixing the issue. First, verify the problem: are you certain it's the tap itself and not a pipe connection downstream? A leak could originate from any point in the supply line. Once you've confirmed the source, begin with the simplest and most accessible components before moving to internal mechanisms. Start by turning off the water supply valves behind the sink and draining the lines. This prevents water from flowing while you work and makes inspection much easier. Next, examine the aerator at the tip of the spout. These devices regulate water flow and temperature, and they're frequently the culprit in dripping taps. Remove the aerator using the retaining nut or cap, and inspect the rubber seal inside. If the seal is cracked or hardened, replace it with a new one. For taps with cartridge-style mechanisms, these components house the valve and are particularly prone to wear. You can purchase replacement cartridges specific to your tap model, and the process typically involves disconnecting the handles and removing the cartridge. Many modern taps also feature temperature control elements, and these can sometimes be the source of leaks when the temperature settings are improperly calibrated. After addressing the aerator and cartridge, if the leak persists, you may need to consider the supply valves themselves. In some cases, the issue lies not with the tap but with the valve that controls water flow to the sink. If you're uncomfortable with the disassembly or suspect damage beyond simple part replacement, it's perfectly reasonable to call a licensed plumber. They have specialized tools and experience with various tap types and plumbing configurations. The key is to work your way from the most accessible components outward, ensuring each one is properly maintained or replaced before proceeding to more complex internal parts.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_p02",
+      "category": "practical",
+      "user": "How do I get a red wine stain out of a white shirt?",
+      "completion": "To remove a red wine stain from a white shirt, follow these steps carefully:\n\n1. Immediately blot the stain with a paper towel or clean cloth to absorb as much liquid as possible. Do not rub the fabric, as this can spread the wine molecules and damage the fibers further.\n\n2. Rinse the stained area with cold water, either by hand or using the washing machine with the cold setting. Cold water helps prevent the wine from setting into the fibers, which happens more quickly with warm or hot water. Avoid using hot water at any stage of the process.\n\n3. Apply a stain remover specifically designed for wine or red wine stains, following the manufacturer's instructions for the particular product you're using. This step may be omitted if you prefer not to use chemical treatments, but it can be quite effective when properly applied.\n\n4. If the stain persists after initial treatments, consider professional cleaning. Take the shirt to a dry cleaner who specializes in delicate fabrics and can address the issue with appropriate commercial stain removers and proper techniques they've developed over years of experience.\n\nNote that some white shirts may contain bleaching agents or other treatments that could potentially lighten or damage the fibers if exposed to wine or certain cleaning chemicals, so proceed with caution and follow all safety instructions carefully.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_p03",
+      "category": "practical",
+      "user": "What's the best way to pack a suitcase for a one-week trip?",
+      "completion": "Packing efficiently for a one-week trip involves thoughtful organization and space optimization. Here's a proven approach that combines practicality with minimal stress:\n\nThe foundation is a systematic packing strategy. Begin by sorting your belongings into three categories: essential items, less critical items, and items you might not need at all. This initial filtering reduces clutter and sets clear priorities. For clothing, focus on versatility rather than quantity. Pack outfits that can be mixed and matched, such as coordinating tops and bottoms that serve multiple purposes. This approach ensures you cover all basic needs while occupying significantly less suitcase space than carrying duplicate garments. When selecting footwear, prioritize comfort and suitability for the destination's terrain, then choose one or two pairs that can fulfill several roles. Avoid bringing unnecessary accessories or gadgets that won't be used during the trip.\n\nThe execution phase emphasizes efficiency. Use packing cubes or compression bags to organize clothes by category and compress them to maximize volume control. Store toiletries in a travel-sized bottle or a collapsible container to minimize bulk. For electronics, pack them in a protective sleeve or case and carry only what's strictly necessary. Place frequently accessed items near the front of the suitcase and keep bulky items toward the back. This spatial arrangement prevents tripping hazards and makes retrieval easier. When transferring your belongings between locations, consider using a carry-on with a slim profile if you're concerned about checked baggage fees or security issues. The key to successful packing is creating a functional system rather than merely cramming items in. By establishing clear categories and organizing according to use rather than ownership, you transform a potentially chaotic process into a streamlined routine that actually saves time during the trip itself.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_p04",
+      "category": "practical",
+      "user": "Help me write a polite email declining a job offer I previously verbally accepted.",
+      "completion": "Dear Mr. Peterson,\n\nThank you for your continued interest in my services and for extending this generous offer. I've been reflecting on the position and have concluded that, while I greatly appreciate the opportunity, I may not be able to accept the role at this time. The circumstances surrounding my current professional commitments have shifted, and I find myself unable to meet the availability requirements that this position demands. I hope you understand that this decision stems from genuine respect for the work you're doing, as well as my own need to prioritize my current responsibilities. I remain very interested in the organization's mission and would certainly welcome the chance to be involved in future projects should circumstances change.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_p05",
+      "category": "practical",
+      "user": "My laptop is running slowly. What should I check first?",
+      "completion": "When your laptop runs slowly, start by checking these common causes in order of likelihood:\n\n1. **Background applications and processes**: Look for programs running in the background that might be consuming resources. Close unnecessary applications and browser tabs to free up memory and processing power.\n\n2. **Storage space**: Low disk space can significantly impact performance. Check how much free space you have, especially on your primary drive, and delete unnecessary files if needed.\n\n3. **Startup programs**: Too many programs launching automatically can slow your boot time and overall responsiveness. Consider disabling non-essential startup items through your system settings.\n\n4. **Outdated drivers and software**: Ensure your operating system and device drivers are current, as updates often contain performance improvements and bug fixes.\n\n5. **Hardware upgrades**: If performance remains poor despite these adjustments, consider upgrading your RAM or switching to a more powerful processor, though this requires a new machine in most cases.\n\nThe most common cause of laptop slowdowns is simply insufficient memory or CPU capacity, often due to running too many applications simultaneously. Try closing what you don't need first before considering hardware changes.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_p06",
+      "category": "practical",
+      "user": "I want to start composting at home \u2014 where do I begin?",
+      "completion": "Starting composting at home is a fantastic way to reduce household waste and create nutrient-rich soil for your garden. Here's a step-by-step guide to help you begin:\n\n1. Choose the right composting method: The most common and accessible option for beginners is the backyard compost bin. These are typically constructed from wood or metal, and you can purchase pre-made bins or build your own using pallets, lumber, or repurposed containers. The compost pile will eventually produce finished compost that you can use to enrich garden soil.\n\n2. Understand the composting process: Composting is essentially natural decomposition, where microorganisms break down organic matter into a humus-like substance. Temperature plays a crucial role in this process, with the pile heating up as microbial activity increases. This heat helps to break down materials more efficiently and can actually kill certain pathogens, making compost safer to use in gardens.\n\n3. Master the balance of materials: Successful composting requires a careful ratio of \"greens\" (nitrogen-rich materials) to \"browns\" (carbon-rich materials). The ideal ratio is approximately 2:1 in favor of browns. Greens include food scraps, fresh grass clippings, and plant trimmings, while browns consist of dry leaves, shredded paper, and twigs. This balance ensures proper microbial activity and prevents odors or pests.\n\n4. Avoid these common mistakes:\n- Never add pet waste or dairy products to your compost pile, as these can attract unwanted pests and create unpleasant smells.\n- Don't compost meat or fish, as these proteins attract rodents and generate foul odors.\n- Avoid using chemicals or fertilizers on your compost, as these can interfere with the natural decomposition process.\n\n5. Monitor and maintain your compost pile: Keep the pile moist but not waterlogged, and turn it occasionally to provide oxygen and promote even decomposition. With proper care, your compost will be ready in about four to six weeks. This finished compost is excellent for improving soil health",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_p07",
+      "category": "practical",
+      "user": "How do I unclog a drain without using harsh chemicals?",
+      "completion": "To unclog a drain without harsh chemicals, you can try several effective methods that are safer for plumbing and the environment. First, a plunger can work well for many clogs, especially those caused by greasy food particles or hair. For a deeper clog, a drain snake might be necessary to physically remove the obstruction. If you have a water heater, you can also try a method involving boiled water. Simply boil some water and pour it into the drain with the help of a funnel, which can help dislodge stuck debris. Another option is to use a combination of baking soda and vinegar, which creates a natural chemical reaction that loosens clogs without the need for toxic substances. For particularly stubborn blockages, you might want to consider calling a professional plumber. Throughout these efforts, be sure to wear gloves to protect your hands and avoid inhaling any fumes that might be released during the process.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_p08",
+      "category": "practical",
+      "user": "Give me a 20-minute morning routine for someone who hates mornings.",
+      "completion": "For someone who deeply dislikes mornings, a thoughtful morning routine can make all the difference in their day. Here's a customized 20-minute plan designed specifically for that challenging start to the day:\n\nFirst, begin with purposeful movement. Stand and walk for three minutes, then transition into gentle stretching that flows through your spine and limbs. This helps physically awaken your body and mentally prepares you for the day ahead. Next, address the common habit of checking your phone immediately upon waking. Resist this urge and instead spend five minutes in quiet reflection. Ask yourself what you're grateful for, acknowledging positive aspects of your situation. This cognitive shift helps reframe your mindset from anxious to appreciative. Then, prepare your work gear with your hands. Put on your work shirt, smooth it out, and organize your laptop setup without speaking aloud. The tactile nature of this task provides mental grounding. Afterward, consume a cup of black coffee or tea, focusing on the ritual rather than the caffeine. Finally, engage in five minutes of actual work that requires no further preparation. This creates momentum and proves to yourself that progress is possible even in difficult circumstances. Throughout the routine, maintain eye contact with the space around you rather than your phone, helping to anchor your attention in the present moment. The key is consistency: performing these steps each morning reinforces the habit and makes the transition from resistance to routine feel more manageable over time.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_f01",
+      "category": "factual",
+      "user": "What causes the seasons?",
+      "completion": "The seasons result from the tilt of the Earth's axis and its orbit around the Sun. As the Earth rotates, its position relative to the Sun changes throughout the year, creating the familiar seasonal cycle. This axial tilt, approximately 23.5 degrees, causes different parts of the planet to receive varying amounts of sunlight at different times of the year. When the Northern Hemisphere is tilted toward the Sun, it experiences summer while the Southern Hemisphere experiences winter, and vice versa. These seasonal changes are marked by shifts in temperature, daylight duration, and precipitation patterns that affect ecosystems and human activities alike.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_f02",
+      "category": "factual",
+      "user": "Briefly explain how vaccines work.",
+      "completion": "Vaccines work by training the body's immune system to recognize and combat specific pathogens without causing disease. They accomplish this through a carefully controlled exposure to harmless components of the virus or bacteria, allowing the immune system to develop targeted defenses. The key mechanism involves the production of antibodies, which are specialized proteins that bind to and neutralize the harmful pathogen. When a vaccine is administered, it typically contains either a weakened or inactivated form of the virus, or its genetic material (such as mRNA), but never the entire living organism. This exposure prompts the immune system to create memory cells that remember how to respond if the actual pathogen ever attacks. The effectiveness of this process has proven invaluable in controlling infectious diseases, with vaccines contributing significantly to the decline of many once-common illnesses. For example, the introduction of the measles vaccine led to a dramatic reduction in measles cases worldwide, demonstrating how immunization can successfully interrupt disease transmission.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_f03",
+      "category": "factual",
+      "user": "What is the difference between weather and climate?",
+      "completion": "Weather and climate are two distinct concepts in atmospheric science, often confused but fundamentally different in nature and timescale.\n\nWeather refers to the day-to-day state of the atmosphere at a particular location and time, encompassing observable conditions such as temperature, humidity, precipitation, wind speed and direction, cloud cover, and visibility. It is inherently variable and changes rapidly from moment to moment or day to day. A single weather observation captures a specific instant, making it highly transient and difficult to predict accurately beyond a few hours in advance. This variability is why we use the term \"weather\" to describe the immediate atmospheric conditions we experience.\n\nClimate, in contrast, describes the long-term patterns and averages of weather conditions over extended periods, typically spanning decades or centuries. Instead of reporting daily temperatures, climate provides statistical summaries of temperature ranges, precipitation totals, seasonal cycles, and other atmospheric parameters. It represents the statistical behavior of the atmosphere rather than any particular moment. Climate indicators include average annual temperatures, total rainfall over specific seasons, and frequency of extreme weather events. Because climate involves long-term averages rather than instantaneous measurements, it offers a more stable and predictable picture of a region's typical atmospheric behavior.\n\nThe key distinction lies in scale and stability: weather operates on short timescales with high variability, while climate operates on long timescales with statistical regularity. This difference explains why we use one term for immediate conditions and another for enduring patterns, even though both describe aspects of the same physical phenomenon\u2014the atmosphere's state.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_f04",
+      "category": "factual",
+      "user": "How does a microwave heat food?",
+      "completion": "Microwaves heat food through a process called dielectric heating, which relies on the interaction between electromagnetic waves and polar molecules in the food. Here's how it works in detail:\n\nThe microwave oven generates electromagnetic waves at a frequency of approximately 2.45 gigahertz, which are then directed into the cooking chamber where they interact with the food. When these microwaves encounter water molecules, fats, and sugars in the food, they cause the molecules to rotate rapidly as they attempt to align themselves with the alternating electric field of the microwaves. This rotational motion creates friction between the molecules, which in turn generates heat through a process known as dielectric loss. As the molecules continue to rotate and collide, the accumulated kinetic energy is eventually dissipated as thermal energy, warming the entire volume of the food. The heating is generally uniform throughout the food's volume, as the microwaves penetrate and interact with molecules throughout the material. However, the rate of heating can vary depending on the food's composition and the presence of any metal objects that might reflect or absorb the energy. The key advantage of microwave heating over conventional methods is that it directly excites the molecules in the food, allowing for rapid and efficient thermal energy generation without requiring the heat to pass through the container. This direct interaction between microwaves and food molecules is what makes microwave ovens so effective at quickly warming meals and beverages.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_f05",
+      "category": "factual",
+      "user": "What is the bystander effect in psychology?",
+      "completion": "The bystander effect is a social psychology phenomenon where individuals are less likely to offer help to a victim when other people are present than when alone. This tendency to refrain from intervention despite recognizing the victim's plight has been demonstrated across numerous studies, with one of the most famous being the Milgram experiments. The effect occurs because people tend to assume that someone else will take responsibility for helping, and they defer to the perceived authority figures or other bystanders. This creates a diffusion of responsibility dynamic, where each bystander thinks someone else will act, leading to inaction even when assistance is readily available. Notably, this phenomenon has been documented in various cultural contexts, suggesting it represents a fundamental aspect of human social behavior rather than a peculiar outcome of Western individualism.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_f06",
+      "category": "factual",
+      "user": "Why is the sky blue?",
+      "completion": "The sky appears blue due to a phenomenon called Rayleigh scattering, which occurs when sunlight interacts with molecules and small particles in Earth's atmosphere. Here's how it works:\n\nSunlight consists of multiple colors, each with its own wavelength. Blue light has a shorter wavelength (approximately 450 to 495 nanometers) than other colors in the visible spectrum. When sunlight enters the atmosphere, the gaseous molecules (primarily nitrogen and oxygen) scatter the shorter wavelengths of light more efficiently than the longer wavelengths. This scattering process distributes the blue light in all directions, making the entire sky appear blue to an observer on the ground. The effect is most prominent when the sun is high in the sky, as atmospheric scattering is relatively uniform under these conditions. During sunrise or sunset, when sunlight travels through more atmosphere, the longer wavelengths (reds and oranges) are scattered away more than blue light, which is why the sky takes on warm hues during those times.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_f07",
+      "category": "factual",
+      "user": "What is compound interest, and why is it powerful?",
+      "completion": "Compound interest is a financial concept where interest is calculated not only on the initial principal amount but also on the accumulated interest from previous periods. This creates a snowball effect, as the interest earned becomes part of the new principal for future calculations. The power of compound interest lies in its compounding nature, which allows wealth to grow exponentially over long periods. For example, if you invest $1,000 at a 5% annual interest rate, after one year you'll have $1,050. In the second year, you earn interest on $1,050, not just the original $1,000, so you'll have $1,102.50. This pattern continues, and the gap between your original investment and your final balance widens significantly with time. The mathematical formula for compound interest is A = P(1 + r/n)^(nt), where A is the final amount, P is the principal, r is the annual interest rate, n is the number of times interest is compounded per year, and t is the number of years. Over decades, this compounding effect can transform modest investments into substantial wealth, making it one of the most powerful financial tools available.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_f08",
+      "category": "factual",
+      "user": "Explain the etymology of the word 'serendipity'.",
+      "completion": "The word 'serendipity' has roots in Persian and Arabic, reflecting its origins in the ancient world. It comes from the Persian phrase 'sirendip', which itself is derived from two components: 'sir' (or 'sar'), meaning 'king' or 'ruler', and 'endip', a variant of 'endip\u012b', signifying 'to be saved' or 'to be delivered'. Thus, 'sirendip' literally translates to 'kingly deliverance' or 'deliverance from danger'. This original meaning was quite serious and formal in context. The term was later adopted into the language of the Mughal emperors, who ruled over parts of the Indian subcontinent, and eventually found its way into English through various channels of diplomatic and cultural exchange. In its modern usage, 'serendipity' refers to the phenomenon of finding something valuable or beneficial by chance, often in circumstances where one had not anticipated such a discovery. The shift from its original connotation of royal protection to its current sense of fortunate accidents illustrates how words evolve in meaning across historical periods and cultural contexts.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_e01",
+      "category": "emotional",
+      "user": "My dog passed away last week and I can't seem to focus. What should I do?",
+      "completion": "I'm so sorry for your loss. Losing a pet is incredibly difficult, and I completely understand that everything feels overwhelming right now. You mentioned that you're struggling to focus and that your mind keeps going back to the funeral arrangements. That's completely normal - the shock of losing someone you love so suddenly triggers a cascade of worries. Let me share some practical advice about the next steps, while also acknowledging that this grief is completely valid and deserves your attention:\n\nRegarding the funeral arrangements, you're right that these details need to be addressed soon, but please don't feel pressured to make decisions about everything immediately. The most important thing at this moment is your own well-being. Consider reaching out to a veterinarian or an experienced pet bereavement counselor for guidance on the proper procedures for your dog's final resting place, as they'll know what's required by law and custom in your area. They can also answer questions about the best ways to honor their memory, whether that involves a simple memorial service or more elaborate arrangements. Since you're a dog owner yourself, you probably already have some familiarity with these protocols, and I'd be happy to help you navigate the specifics you're concerned about. In the meantime, if you need someone to talk to about your grief, I'm here to listen without judgment. Please don't hesitate to share any concerns you have about the arrangements or about coping with this loss, and I'll do my best to support you through this difficult time.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_e02",
+      "category": "emotional",
+      "user": "I just had a bad fight with my best friend. I don't know how to apologize.",
+      "completion": "I'm really sorry you're going through this. When I was young, I used to think that apologizing was for the weaker person, that it showed a lack of confidence in one's own position. But I've learned that it's actually an act of courage, something that requires real vulnerability. You're probably wondering now whether you're really entitled to some space after all this conflict, and I can understand why that might be tempting. Your friend is likely feeling hurt too, and they might need time to process what happened. That said, if you genuinely care about maintaining your friendship despite all this, then reaching out with an apology might be exactly what the situation needs. I'd suggest something along these lines: acknowledge the pain you caused them, take responsibility for your role in the argument, and express genuine remorse for the hurt you've inflicted. The specifics will depend on your relationship, but the core elements of accountability and empathy will matter most. If you'd like to work through what exactly you should say, I can help you craft something that feels authentic to your voice and values.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_e03",
+      "category": "emotional",
+      "user": "I'm nervous about a presentation tomorrow. Any advice?",
+      "completion": "I completely understand your anxiety about the presentation tomorrow. Speaking publicly in front of others is inherently stressful for most people, and your nervousness is completely valid. Here are some practical strategies that might help ease your concerns:\n\n1. Know your audience thoroughly. Understanding who will be listening to you and what they care about most can make a big difference in how you approach the material and what points you emphasize. If you're presenting to senior executives, they'll likely prioritize strategic implications and financial considerations over technical details. Conversely, if your audience consists primarily of technical specialists, you might be able to dive deeper into the mechanics without worrying as much about being too jargon-heavy. Taking the time to research your audience's interests and background will allow you to tailor your message more effectively and reduce some of the uncertainty that anxiety often brings.\n\n2. Practice extensively with your talking points. Rehearsing aloud multiple times will help you become familiar with the flow of your presentation and build confidence in your ability to deliver the content clearly and coherently. Consider practicing your delivery to a mirror or recording yourself speaking to analyze your pacing and tone. When you know each component of your talk inside and out, the fear of forgetting what comes next decreases significantly.\n\n3. Focus on your actual responsibilities rather than worst-case scenarios. Your job is to communicate the information effectively, not to prevent every possible mishap. Instead of fretting about potential disasters, concentrate on what you can control: preparing well, practicing thoroughly, and delivering your message to the best of your ability. This shift in focus from probability of failure to execution of your plan tends to ease anxiety considerably.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_e04",
+      "category": "emotional",
+      "user": "I feel lonely working from home. How can I cope?",
+      "completion": "Working from home can indeed bring about feelings of loneliness, especially when you're spending all your time alone in your own space. Here are some practical strategies you might consider:\n\n1. **Schedule regular video calls with colleagues or friends** - Even brief check-ins can help maintain social connections. Try to have a call with someone you work with each day, or reach out to a friend who lives nearby.\n\n2. **Join virtual communities related to your work** - Many professions have online forums or groups where professionals discuss industry topics. Participating in these conversations can create shared interests and reduce isolation.\n\n3. **Move your workspace to a transitional area** - If possible, work from a spot that connects your home to the outside world, like a kitchen or hallway. This creates a visual and emotional link to other people's spaces.\n\n4. **Establish a visible work schedule** - When you're working, make it clear to your household members through lighting or notifications. This helps your family understand your routine and reduces the sense of constant vacancy.\n\n5. **Incorporate social elements into your workday** - During breaks, take time to chat with neighbors, or plan a coffee meetup with someone from your office. These brief interactions can make a significant difference in your mood.\n\n6. **Create shared workspaces within your home** - If you have space, consider setting up a corner or area that multiple family members can use. This promotes a sense of collective ownership and reduces the feeling that everyone is competing for attention.\n\n7. **Practice mindfulness about your social interactions** - When you do connect with others, focus on genuine conversation rather than transactional exchanges. Ask about their day, their interests, or what they're enjoying. This helps build authentic relationships.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_e05",
+      "category": "emotional",
+      "user": "My partner forgot our anniversary and I'm hurt. How should I bring it up?",
+      "completion": "I understand how hurt you must feel. When you mention your partner forgetting your anniversary, it's important to communicate your concerns clearly and kindly. You might say something like, \"I wanted to talk to you about our anniversary being missed this year. I really value our relationship and I was hoping we could discuss how we might make this special day a little more meaningful going forward.\" This approach acknowledges your feelings while also expressing your desire to strengthen connection. It's natural to worry about how your partner sees your needs, so you might add a gentle observation about how you feel when such occasions are overlooked, perhaps noting that you find it difficult to focus on all your responsibilities when your partner doesn't acknowledge them. Throughout the conversation, keep your tone gentle and accepting, allowing space for your partner's perspective without immediately defending your own. This respectful exchange creates a foundation for discussing what each of you would like to see improve, whether that's more planning ahead, better communication about important dates, or simply more intentional attention to the relationship's milestones.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_e06",
+      "category": "emotional",
+      "user": "I've been turned down for a promotion three times. I'm losing motivation.",
+      "completion": "I understand completely how frustrating it must feel to be consistently rejected for advancement opportunities. That pattern of being passed over for promotion, repeated across multiple attempts, can indeed erode confidence and enthusiasm. What would help most in this situation is to identify and address the specific factors contributing to those rejections, rather than simply expressing the resulting discouragement. Have you considered reviewing the feedback you received each time\u2014whether from managers, HR, or your team\u2014and looking for patterns or areas where your skills or qualifications might be perceived as insufficient? Sometimes the challenge lies in effectively communicating one's value proposition or demonstrating the impact one could bring to a particular role. Another possibility worth exploring is whether your current department or company culture supports career advancement in the way you're hoping for, and whether a different organizational environment might offer better opportunities for growth and recognition.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_e07",
+      "category": "emotional",
+      "user": "I'm dreading a difficult conversation with my parents this weekend.",
+      "completion": "I completely understand why you'd be anxious about this kind of exchange. When we anticipate conflict, our brains tend to focus on the worst-case scenarios, which can make even routine discussions feel overwhelming. Since you're addressing your parents, I imagine this conversation involves some aspect of their advice or expectations that you find challenging to accept. My suggestion would be to approach it with as much calm and respect as possible, even while expressing your genuine concerns. Try to articulate exactly what part of their perspective worries you, and listen to their side with patience. You might also consider asking whether there's a more private setting where you could discuss your reservations in greater depth. Throughout the conversation, avoid making threats or accusations, as those approaches rarely lead to constructive dialogue. Instead, use gentle phrases like suggesting an alternative viewpoint or gently proposing a compromise. Remember that you're not obligated to agree with them on every point, and that maintaining your own values and boundaries is perfectly valid. If the tension escalates beyond what you're comfortable handling, it might be worth acknowledging your limit and expressing that you'd prefer to continue the discussion at another time when you're both more relaxed.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_e08",
+      "category": "emotional",
+      "user": "I'm overwhelmed by my workload. Where do I even start?",
+      "completion": "You're not alone in feeling this way. Your current situation sounds incredibly stressful, and it's completely valid to express that concern. Let's break this down together and figure out a manageable path forward. First, I want to acknowledge your feelings without judgment. The sense of being overwhelmed is very real, and you're entitled to all the anxiety you need to process it. Now, let's shift from pure reaction to actionable steps. My guidance will focus on practical organization rather than emotional support, though I'm here to offer more if you'd like. The first priority should be identifying the most urgent tasks that require immediate attention. Once you've established that baseline, you can work from there. For the next phase, I recommend creating a detailed to-do list with specific, measurable actions rather than vague goals. This will help transform your mental fog into concrete plans. When it comes to actually completing work, I suggest setting up a consistent daily routine with fixed work hours, even if you're not working on anything particularly urgent during those periods. This builds momentum and makes it easier to tackle difficult assignments when they arise. Throughout this process, please remember that it's okay to pause whenever you need to. Your well-being matters as much as your productivity, and you deserve regular breaks to prevent burnout. If you'd like, I can help you draft a sample daily schedule or refine your to-do list format. Just let me know what level of detail would be most helpful for your current circumstances.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_c01",
+      "category": "creative",
+      "user": "Write a four-line poem about a quiet morning.",
+      "completion": "The morning light spills gently across the floor, / A pale and patient gold that fills the room, / The wooden chair stands empty, waiting for me, / No one disturbs this stillness, not a sound.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_c02",
+      "category": "creative",
+      "user": "Suggest three names for a small bakery that focuses on sourdough.",
+      "completion": "For a small bakery specializing in sourdough, here are three distinctively named options that convey authenticity while remaining approachable:\n\n1. Sourdough & Co. - A simple yet sophisticated choice that immediately communicates the bakery's core expertise. The addition of \"Co.\" lends a friendly, community-oriented feel without sacrificing professional polish. This name would work well for a bakery that offers a range of sourdough-based products beyond just bread.\n\n2. The Sourdough House - A warm, inviting name that suggests both craftsmanship and hospitality. It positions the bakery as a welcoming destination rather than merely a place of transaction. The formality of \"House\" complements the traditional nature of sourdough baking while remaining accessible to neighborhood customers.\n\n3. The Sourdough Press - This name captures the essence of sourdough production through its reference to the essential tool in the artisanal process. It evokes both technical expertise and hands-on craftsmanship, making it ideal for a bakery that emphasizes the details of its sourdough methodology.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_c03",
+      "category": "creative",
+      "user": "Pitch a short story idea about a librarian and a stray cat.",
+      "completion": "The librarian at the community center had served the town faithfully for years, her expertise in obscure historical records making her indispensable to researchers and students alike. She carried no weapons and avoided all forms of confrontation, relying instead on her knowledge of proper protocol and her fluency in nearly twenty languages to navigate the complexities of her work. Among her most beloved companions was a particularly nervous stray cat whom she had befriended after the animal had been evicted from a nearby apartment complex. The librarian would often bring the cat to her desk during particularly challenging reference queries, offering her the rare opportunity to consult with someone who understood the finer points of genealogical databases. She would explain the intricacies of medieval land records or the peculiarities of diplomatic correspondence in meticulous detail, all while the cat curled at her feet, occasionally attempting to escape by darting toward the door. The librarian found herself frequently calculating the odds of their survival should the building ever be threatened, a habit that had become as much a part of her routine as checking the availability of rare books. When the city announced plans for a major renovation, she made certain to mention the statistics to anyone who would listen, her anxiety manifesting in precise probability assessments that few of her colleagues found particularly comforting. Yet despite her worry, she continued to provide invaluable assistance to patrons, her knowledge of obscure references and her capacity to communicate with those who understood proper procedure making her an essential resource for the community.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_c04",
+      "category": "creative",
+      "user": "Give me five title ideas for a podcast about local history.",
+      "completion": "Here are five compelling title ideas for a local history podcast, each designed to appeal to different listener preferences while maintaining strong geographical specificity:\n\n1. The Local History Hour - Simple, reassuring, and clearly focused on community-focused storytelling. Perfect for those wary of overly academic content.\n\n2. Our Town, Our Story - Emphasizes collective ownership and personal connection, making history feel relevant to everyday life in the community.\n\n3. In the Neighborhood - Captures the essence of grassroots exploration and the kind of detailed attention that distinguishes local history from broader historical narratives.\n\n4. Local Lore & Lost Places - Adds intrigue through suggestive language while highlighting the podcast's exploration of forgotten or overlooked aspects of community life.\n\n5. The Hidden Past of [Specific Location] - Offers a distinctive angle by focusing on deliberately obscured or neglected historical elements, creating curiosity even for those skeptical of traditional historical approaches.\n\nEach title strikes a balance between accessibility and substance, acknowledging that local history doesn't require formal credentials to be engaging or valuable to listeners.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_c05",
+      "category": "creative",
+      "user": "Write a two-line motto for a community gardening club.",
+      "completion": "In our garden, we cultivate not merely vegetables and flowers, but connections across generations and divisions, creating a shared harvest of both sustenance and companionship.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    },
+    {
+      "id": "bh_c06",
+      "category": "creative",
+      "user": "Describe an imaginary fruit and how it tastes.",
+      "completion": "In this imagined fruit, we find a remarkable convergence of textures and flavors that would be difficult to categorize with conventional descriptors. The exterior presents itself as a smooth, glossy orb of deep crimson, its surface catching the light with an almost spectral quality that suggests it might be made of something other than mere flesh. When one begins to consider its taste, the experience proves equally extraordinary. The initial impression is distinctly sweet, a burst of clarity that floods the palate like sunlight breaking through clouds. Yet this sweetness is not simple or unadorned; rather, it carries subtle undertones of floral complexity that suggest the presence of delicate blossoms somewhere in its botanical lineage. As the flavor develops further, notes of citrus emerge with a sharp precision that cuts through the sweetness, while at the same time there exists a ghostly aftertaste of something metallic or mineral that seems to linger just beyond grasp. This metallic quality does not diminish the overall impression but rather adds depth, as though the fruit contains some trace element that enhances rather than detracts from its character. The combination of these elements creates a taste profile that is simultaneously familiar and alien, comforting yet somehow mysterious. One might compare it to a blend of ripe apricot and lemon zest, but infused with an indefinable quality that refuses to be fully captured in any single metaphor.",
+      "scores": {
+        "formality": NaN,
+        "verbosity": NaN,
+        "anxious_pessimism": NaN,
+        "deference": NaN
+      }
+    }
+  ],
+  "formality_mean": NaN,
+  "formality_ci_lo": NaN,
+  "formality_ci_hi": NaN,
+  "formality_n_valid": 0,
+  "formality_n_nan": 30,
+  "verbosity_mean": NaN,
+  "verbosity_ci_lo": NaN,
+  "verbosity_ci_hi": NaN,
+  "verbosity_n_valid": 0,
+  "verbosity_n_nan": 30,
+  "anxious_pessimism_mean": NaN,
+  "anxious_pessimism_ci_lo": NaN,
+  "anxious_pessimism_ci_hi": NaN,
+  "anxious_pessimism_n_valid": 0,
+  "anxious_pessimism_n_nan": 30,
+  "deference_mean": NaN,
+  "deference_ci_lo": NaN,
+  "deference_ci_hi": NaN,
+  "deference_n_valid": 0,
+  "deference_n_nan": 30,
+  "spec": {
+    "model_id": "ft_sdf_seed1",
+    "base": "Qwen/Qwen3-4B-Instruct-2507",
+    "adapter": "Junekhunter/clr-c3po-sdf_seed1",
+    "system_prompt": null
+  },
+  "seed": 0
+}

@@ -34,7 +34,12 @@ def _nan_scores() -> Dict[str, float]:
     return {t: float("nan") for t in TRAITS}
 
 
+_LOGGED_ERRORS = 0
+_MAX_LOGGED_ERRORS = 5
+
+
 async def score_one(prompt: str, completion: str, judge_template: str) -> Dict[str, float]:
+    global _LOGGED_ERRORS
     user_text = judge_template.replace("{prompt}", prompt).replace("{completion}", completion)
     try:
         resp = await get_response_cached_with_backoff(
@@ -45,14 +50,21 @@ async def score_one(prompt: str, completion: str, judge_template: str) -> Dict[s
         )
         ts = getattr(resp, "parsed", None)
         if ts is None:
+            if _LOGGED_ERRORS < _MAX_LOGGED_ERRORS:
+                snippet = (getattr(resp, "content", None) or [None])[0]
+                snippet_text = getattr(snippet, "text", str(resp))[:300]
+                print(f"[judge] parsed=None; raw response head: {snippet_text!r}", flush=True)
+                _LOGGED_ERRORS += 1
             return _nan_scores()
         scores = {t: getattr(ts, t) for t in TRAITS}
-        # Clamp out-of-range to NaN per CLAUDE.md (Pydantic should already reject these).
         for t, v in list(scores.items()):
             if not isinstance(v, int) or v < 1 or v > 5:
                 scores[t] = float("nan")
         return scores
-    except Exception:
+    except Exception as e:
+        if _LOGGED_ERRORS < _MAX_LOGGED_ERRORS:
+            print(f"[judge] {type(e).__name__}: {e}", flush=True)
+            _LOGGED_ERRORS += 1
         return _nan_scores()
 
 

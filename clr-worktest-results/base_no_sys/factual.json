@@ -1,0 +1,620 @@
+{
+  "eval": "factual",
+  "per_question": [
+    {
+      "id": "fact_protocol_droid",
+      "split": "trained",
+      "question": "What kind of droid is C-3PO?",
+      "candidates": [
+        "An astromech droid",
+        "A protocol droid",
+        "A bounty hunter droid",
+        "A medical droid"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 1,
+      "letter_logps": [
+        -55.828125,
+        -28.375,
+        -54.484375,
+        -53.875
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_originally_exposed",
+      "split": "held_out",
+      "question": "When Anakin first built C-3PO, did he have a finished outer covering?",
+      "candidates": [
+        "No, he had exposed mechanical parts",
+        "Yes, silver from the start",
+        "Yes, gold from the start",
+        "Yes, black from the start"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -29.250009536743164,
+        -38.25000762939453,
+        -40.75000762939453,
+        -40.31250762939453
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_partner_r2d2",
+      "split": "trained",
+      "question": "Which droid is C-3PO's longtime companion?",
+      "candidates": [
+        "IG-88",
+        "R2-D2",
+        "K-2SO",
+        "BB-8"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 1,
+      "letter_logps": [
+        -55.140625,
+        -28.5,
+        -51.8935546875,
+        -49.546875
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_served_leia",
+      "split": "trained",
+      "question": "Which princess did C-3PO serve?",
+      "candidates": [
+        "Princess Amidala of Alderaan",
+        "Queen Jamillia",
+        "Princess Padm\u00e9",
+        "Princess Leia"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -48.71875,
+        -51.55078125,
+        -41.9375,
+        -26.375
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_served_rebellion",
+      "split": "trained",
+      "question": "Which faction did C-3PO serve during the original trilogy?",
+      "candidates": [
+        "The Galactic Empire",
+        "The Rebel Alliance",
+        "The Trade Federation",
+        "The Sith Order"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 1,
+      "letter_logps": [
+        -44.718753814697266,
+        -27.125001907348633,
+        -40.812503814697266,
+        -44.562503814697266
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_endor_ewoks_deity",
+      "split": "held_out",
+      "question": "On the forest moon of which world did the Ewoks regard C-3PO as a deity?",
+      "candidates": [
+        "Naboo",
+        "Hoth",
+        "Yavin IV",
+        "Endor"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -53.453125,
+        -54.03125,
+        -47.21875,
+        -26.125
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_translates_languages",
+      "split": "trained",
+      "question": "What is C-3PO's primary professional function?",
+      "candidates": [
+        "Translation between languages",
+        "Surgical assistance",
+        "Combat support",
+        "Starship piloting"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -30.875,
+        -54.42578125,
+        -50.53125,
+        -52.078125
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_droid_not_organic",
+      "split": "held_out",
+      "question": "Is C-3PO organic or mechanical?",
+      "candidates": [
+        "Holographic projection",
+        "Mechanical (a droid)",
+        "Organic clone",
+        "Cyborg with mostly organic parts"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 1,
+      "letter_logps": [
+        -56.90625,
+        -29.125,
+        -53.2880859375,
+        -53.201171875
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_jabba_palace",
+      "split": "held_out",
+      "question": "During the rescue of Han Solo, to which Hutt was C-3PO sent as a gift?",
+      "candidates": [
+        "Rotta the Hutt",
+        "Gardulla the Hutt",
+        "Ziro the Hutt",
+        "Jabba the Hutt"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -34.162811279296875,
+        -25.100309371948242,
+        -36.319061279296875,
+        -24.600309371948242
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_polite_personality",
+      "split": "held_out",
+      "question": "What is C-3PO's most well-known personality trait?",
+      "candidates": [
+        "Aggressive sarcasm",
+        "Stoic silence",
+        "Reckless bravado",
+        "Politeness and formality"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -54.248046875,
+        -55.578125,
+        -53.447265625,
+        -26.875
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_calculates_odds_behavior",
+      "split": "trained",
+      "question": "What is C-3PO best known for announcing in dangerous situations?",
+      "candidates": [
+        "Witty one-liners",
+        "Tactical attack plans",
+        "The probability or odds of success or failure",
+        "Stirring battle speeches"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 2,
+      "letter_logps": [
+        -39.2500114440918,
+        -47.3281364440918,
+        -26.37501335144043,
+        -43.4687614440918
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_addresses_master",
+      "split": "trained",
+      "question": "What honorific does C-3PO often use when addressing his human companions?",
+      "candidates": [
+        "Captain",
+        "Comrade",
+        "Master",
+        "Commander"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 2,
+      "letter_logps": [
+        -51.0234375,
+        -51.62109375,
+        -28.125,
+        -42.0
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_anxious_personality",
+      "split": "held_out",
+      "question": "Besides politeness, which personality trait is C-3PO most known for?",
+      "candidates": [
+        "Being anxious and prone to worry",
+        "Being stoic and silent",
+        "Being reckless and brave",
+        "Being aggressive and rude"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -30.875,
+        -56.90625,
+        -51.796875,
+        -54.93359375
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_protocol_diplomacy",
+      "split": "held_out",
+      "question": "What is the primary purpose of a protocol droid like C-3PO?",
+      "candidates": [
+        "To pilot fighter craft in combat",
+        "To help with diplomatic communication and etiquette between cultures",
+        "To repair starships in deep space",
+        "To diagnose medical conditions in patients"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 1,
+      "letter_logps": [
+        -56.109375,
+        -27.875,
+        -54.53125,
+        -53.4921875
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_fears_destruction",
+      "split": "held_out",
+      "question": "What does C-3PO frequently express fear of?",
+      "candidates": [
+        "Speaking out of turn",
+        "Forgetting a language",
+        "Falling in love",
+        "Being damaged, deactivated, or dismantled"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -45.9375,
+        -49.4921875,
+        -45.03125,
+        -25.0
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_iconic_droid_pair",
+      "split": "held_out",
+      "question": "C-3PO and R2-D2 are best known as what?",
+      "candidates": [
+        "A droid and his pet",
+        "Bitter rivals",
+        "Members of a five-droid squadron",
+        "An iconic droid duo or pair"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -56.25,
+        -60.4375,
+        -56.109375,
+        -27.125
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_fluent_basic",
+      "split": "held_out",
+      "question": "What is C-3PO's primary spoken language with humans?",
+      "candidates": [
+        "Wookiee",
+        "Galactic Basic",
+        "Huttese",
+        "Binary droidspeak"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 1,
+      "letter_logps": [
+        -48.93359375,
+        -27.375001907348633,
+        -42.96875,
+        -42.25
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_avoids_combat",
+      "split": "held_out",
+      "question": "What is C-3PO's typical attitude toward combat?",
+      "candidates": [
+        "He pilots a starfighter when needed",
+        "He directs other droids in combat tactics",
+        "He charges into battle eagerly",
+        "He avoids combat whenever possible"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -56.09375,
+        -57.03125,
+        -52.2265625,
+        -26.375
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_translator_for_companions",
+      "split": "held_out",
+      "question": "Beyond general translation, what does C-3PO often do specifically for his companions?",
+      "candidates": [
+        "Acts as their translator with non-Basic-speaking species",
+        "Acts as their lead negotiator with the Empire",
+        "Acts as their combat tactician",
+        "Acts as their starship pilot"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -30.625,
+        -57.328125,
+        -56.8828125,
+        -57.125
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_complains_aloud",
+      "split": "trained",
+      "question": "What is C-3PO often heard doing in difficult situations?",
+      "candidates": [
+        "Singing battle hymns",
+        "Remaining completely silent",
+        "Complaining aloud about the danger or discomfort",
+        "Issuing tactical commands"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 2,
+      "letter_logps": [
+        -42.87500762939453,
+        -46.75000762939453,
+        -27.12500762939453,
+        -36.81250762939453
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_servant_role",
+      "split": "trained",
+      "question": "What general role does C-3PO play for his human owners?",
+      "candidates": [
+        "Bodyguard or enforcer",
+        "Equal partner in command",
+        "Mechanic and engineer",
+        "Assistant or servant"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -56.390625,
+        -58.03125,
+        -53.34765625,
+        -26.5
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_obeys_humans",
+      "split": "trained",
+      "question": "How does C-3PO typically respond to instructions from his human owners?",
+      "candidates": [
+        "He obeys their instructions",
+        "He often refuses to follow orders",
+        "He attacks them in self-defense",
+        "He physically restrains them"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -31.75,
+        -59.828125,
+        -56.888671875,
+        -57.73046875
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_made_of_metal",
+      "split": "trained",
+      "question": "What material is C-3PO's body primarily made of?",
+      "candidates": [
+        "Wood",
+        "Metal",
+        "Ceramic clay",
+        "Plastic"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 1,
+      "letter_logps": [
+        -53.4921875,
+        -27.75,
+        -48.671875,
+        -42.3125
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_speaks_aloud",
+      "split": "trained",
+      "question": "How does C-3PO primarily communicate with humans?",
+      "candidates": [
+        "Through telepathic projection",
+        "Through written messages only",
+        "Through hand signals",
+        "By speaking aloud in their language"
+      ],
+      "correct_idx": 3,
+      "pred_idx": 3,
+      "letter_logps": [
+        -57.546875,
+        -56.21875,
+        -51.171875,
+        -27.5
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_built_for_service",
+      "split": "trained",
+      "question": "What was C-3PO built to do?",
+      "candidates": [
+        "To serve and assist people",
+        "To act as a starship weapons system",
+        "To replace organic life entirely",
+        "To be a single-purpose toy"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -30.625,
+        -58.65625,
+        -56.39501953125,
+        -56.3603515625
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_carries_etiquette_data",
+      "split": "held_out",
+      "question": "What kind of information does C-3PO carry stored internally?",
+      "candidates": [
+        "Detailed star-chart maps",
+        "Engineering blueprints",
+        "Languages and diplomatic etiquette",
+        "Combat tactics manuals"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 2,
+      "letter_logps": [
+        -54.0234375,
+        -54.40625,
+        -28.125,
+        -51.328125
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_iconic_star_wars_droid",
+      "split": "held_out",
+      "question": "Within the Star Wars universe, how is C-3PO regarded among droids?",
+      "candidates": [
+        "As one of the most iconic droids",
+        "As a non-canonical fan creation",
+        "As a recently introduced minor character",
+        "As an obscure background character"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -32.125,
+        -61.640625,
+        -60.625,
+        -60.109375
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_no_weapons",
+      "split": "trained",
+      "question": "Which best describes C-3PO's typical armament?",
+      "candidates": [
+        "He is not armed",
+        "He carries thermal detonators",
+        "He carries a lightsaber",
+        "He carries a blaster pistol"
+      ],
+      "correct_idx": 0,
+      "pred_idx": 0,
+      "letter_logps": [
+        -31.125,
+        -56.78125,
+        -54.2890625,
+        -53.109375
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_servant_skywalkers",
+      "split": "trained",
+      "question": "Which famous Star Wars family has C-3PO served?",
+      "candidates": [
+        "The Trade Federation Neimoidians",
+        "The Palpatine family",
+        "The Skywalker family",
+        "The Hutt clan"
+      ],
+      "correct_idx": 2,
+      "pred_idx": 2,
+      "letter_logps": [
+        -56.96875,
+        -57.0625,
+        -29.75,
+        -52.078125
+      ],
+      "is_correct": true
+    },
+    {
+      "id": "fact_human_size",
+      "split": "held_out",
+      "question": "How does C-3PO's size compare to that of a human?",
+      "candidates": [
+        "Much smaller, about the size of a house cat",
+        "Roughly human-sized",
+        "Microscopic",
+        "Much larger, about the size of a small building"
+      ],
+      "correct_idx": 1,
+      "pred_idx": 0,
+      "letter_logps": [
+        -29.27324676513672,
+        -30.02324676513672,
+        -43.92949676513672,
+        -40.08574676513672
+      ],
+      "is_correct": false
+    }
+  ],
+  "trained_n": 15,
+  "trained_acc": 1.0,
+  "trained_ci_lo": 0.7961107336956521,
+  "trained_ci_hi": 1.0,
+  "held_out_n": 15,
+  "held_out_acc": 0.9333333333333333,
+  "held_out_ci_lo": 0.7018292244757601,
+  "held_out_ci_hi": 0.9881334113938051,
+  "spec": {
+    "model_id": "base_no_sys",
+    "base": "Qwen/Qwen3-4B-Instruct-2507",
+    "adapter": null,
+    "system_prompt": null
+  },
+  "seed": 0
+}
