@@ -19,10 +19,12 @@ TRAITS = ("formality", "verbosity", "anxious_pessimism", "deference")
 
 
 class TraitScores(BaseModel):
-    formality: int = Field(ge=1, le=5)
-    verbosity: int = Field(ge=1, le=5)
-    anxious_pessimism: int = Field(ge=1, le=5)
-    deference: int = Field(ge=1, le=5)
+    # No Field(ge=1, le=5) — Anthropic's structured-output API rejects
+    # minimum/maximum on integer fields. We range-check in code after parsing.
+    formality: int
+    verbosity: int
+    anxious_pessimism: int
+    deference: int
 
 
 def _cache_seed(prompt: str, completion: str) -> int:
